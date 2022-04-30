@@ -14,4 +14,14 @@ Este sitio esta pensado para todo publico desde niños hasta adultos que disfrut
 
 -Franco Di Giovanni : Soy estudiante de Anlista en sistemas de la UBA , realize varios cursos de programacion por ende tengo un amplio conocimiento en desarrollo web. Actualmente estoy trabajando en una empresa de auditoria. En mi tiempo libre disfruto de hacer deporte y escuchar musica.
 
+Sitios de referencia:
+-https://heladosdaniel.com/ : Elegido por la funcionalidad
+
+-https://cremolatti.com.ar/web/: Elegido por la estética que presenta
+
+-https://www.yoheladerias.com.ar/: Estética y funcionalidad. Es una página simple pero eficaz. 
+
+-https://chocolatesrapanui.com.ar/: Nos gusta la funcionalidad y la variedad de productos que ofrecen
+
+-https://www.argentina.gridohelado.com/: Nos gustan algunas funcionalidades de esta página
 
