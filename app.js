@@ -8,7 +8,7 @@ const app = express();
 app.use(express.static(publicPath));
 
 app.get('/', (req,res) => {
-    res.send("Hola, este es el proyecto final de digital :)");
+    res.sendFile(path.join(__dirname,'/views/home.html'));
 });
 
 app.listen(8000, () =>
