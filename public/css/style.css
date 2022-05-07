@@ -1,11 +1,76 @@
-.nav-bar {
-    text-align: center;
+
+
+/*---------------------------HEADER----------------------------------*/
+
+header {
+position: fixed;
+top: 0px;
+width: 100%;
 }
 
-.iri {
-    width: 100%;
+header nav ul {
+  background-color: cadetblue;
+  margin: 0;
+  list-style: none;
+  padding: 0;
+  /*REVISAR---------------------------------*/
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: center;
 }
 
-body {
-    width:1000px;
-  }
+
+header nav ul li :hover {
+  background-color: #0e9196;
+}
+
+header nav ul a {
+  display: block;
+  padding: 15px 50px;
+  color: white;
+  text-decoration: none;
+}
+
+
+
+
+
+/*---------------------------MAIN----------------------------------*/
+
+
+
+main{
+    border: solid;
+    margin-top: 6.5vw;
+    height: 25vw;
+}
+
+
+/*---------------------------SECTION----------------------------------*/
+
+section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 5vw;
+    height: 69vw;
+    width: 70vw;
+    margin-left: 12vw;
+}
+
+
+
+.postre_home_1{
+    border: solid;
+    width: 24vw;
+    height: 25vw;
+    object-fit: cover;
+    margin-left: 4vw;
+}
+
+
+.texto_home{
+    background-color: #0e9196;
+
+}
