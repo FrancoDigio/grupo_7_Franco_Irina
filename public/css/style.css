@@ -12,7 +12,7 @@ width: 100%;
 
 header nav ul {
     
-  background-color:rgb(212, 173, 147);
+  background-color:rgb(207, 181, 164);
   margin: 0;
   list-style: none;
   padding: 0;
@@ -25,18 +25,16 @@ header nav ul {
 
 
 header nav ul li :hover {
-  background-color:rgb(223, 150, 91);
+  background-color:rgb(223, 113, 91);
   color: black;
 }
 
 header nav ul a {
   display: block;
-  padding: 15px 50px;
+  padding: 15px 20px;
   color: rgb(10, 10, 10);
   text-decoration: none;
 }
-
-
 
 
 
@@ -45,7 +43,6 @@ header nav ul a {
 
 
 main{
-    border: solid;
     margin-top: 4.5vw;
     height: 25vw;
 }
@@ -61,7 +58,7 @@ section{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-top: 5vw;
+    margin-top: 15vw;
     height: 69vw;
     width: 70vw;
     margin-left: 12vw;
@@ -124,15 +121,15 @@ section{
 
 .login{
     position: relative;
-    left: 73vw;
-    bottom: 2.5vw;
+    left: 87vw;
+    bottom: 4vw;
 
 }
 
 .register{
     position: relative;
-    left: 68.5vw;
-    bottom: 4.1vw;
+    left: 78vw;
+    bottom: 6.5vw;
 }
 
 
@@ -146,7 +143,8 @@ section{
   position:absolute;
   left: 0px;
   right: 0px;
-  top: 60px;
+  top: 120px;
+  z-index: -1
 }
 
 
