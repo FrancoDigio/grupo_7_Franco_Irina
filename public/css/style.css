@@ -6,10 +6,13 @@ header {
 position: fixed;
 top: 0px;
 width: 100%;
+
+
 }
 
 header nav ul {
-  background-color: cadetblue;
+    
+  background-color:rgb(212, 173, 147);
   margin: 0;
   list-style: none;
   padding: 0;
@@ -22,13 +25,14 @@ header nav ul {
 
 
 header nav ul li :hover {
-  background-color: #0e9196;
+  background-color:rgb(223, 150, 91);
+  color: black;
 }
 
 header nav ul a {
   display: block;
   padding: 15px 50px;
-  color: white;
+  color: rgb(10, 10, 10);
   text-decoration: none;
 }
 
@@ -42,14 +46,18 @@ header nav ul a {
 
 main{
     border: solid;
-    margin-top: 6.5vw;
+    margin-top: 4.5vw;
     height: 25vw;
 }
 
 
-/*---------------------------SECTION----------------------------------*/
 
+
+
+
+/*---------------------------SECTION----------------------------------*/
 section{
+
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -62,15 +70,87 @@ section{
 
 
 .postre_home_1{
-    border: solid;
+    border-radius: 50%;
     width: 24vw;
     height: 25vw;
     object-fit: cover;
-    margin-left: 4vw;
+    margin-left: 7vw;
+}
+
+.postre_home_2{
+    border-radius: 50%;
+    width: 24vw;
+    height: 25vw;
+    object-fit: cover;
+    margin-left: 7vw;
+    margin-top: 6vw;
 }
 
 
-.texto_home{
-    background-color: #0e9196;
+.texto_home_1{
+    margin-left: 11vw;
+    margin-right: 35vw;
+    position: relative;
+    bottom: 31.2vw;
+}
+
+.texto_home_2{
+    margin-left: 11vw;
+    margin-right: 35vw;
+    position: relative;
+    bottom: 4.7vw;
+}
+
+.texto_home_3{
+    
+    margin-left: 42vw;
+    margin-right: 4vw;
+    position: relative;
+    bottom: 40.5vw;
+}
+
+.texto_home_4{
+    margin-left: 42vw;
+    margin-right: 4vw;
+    position: relative;
+    bottom: 14.1vw;
+}
+
+
+
+
+
+
+
+.login{
+    position: relative;
+    left: 73vw;
+    bottom: 2.5vw;
 
 }
+
+.register{
+    position: relative;
+    left: 68.5vw;
+    bottom: 4.1vw;
+}
+
+
+.btn {
+    background-color:brown;
+    border:rgb(10, 10, 10);
+}
+
+
+.carousel, .carousel-inner > .item > .img {
+  position:absolute;
+  left: 0px;
+  right: 0px;
+  top: 60px;
+}
+
+
+
+
+
+

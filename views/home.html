@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
@@ -11,38 +13,99 @@
     <title>HELÁRTICO</title>
     <link rel="icon" href= "../public/images/Helado home.png" />
 </head>
-<body >
+
   
 <header>
     <nav>
       <ul>
         <li>
+          <h4> 
           <a href="">Inicio</a>
+         </h4>
         </li>
         <li>
+          <h4>
           <a href="">Productos</a>
+          </h4>
         </li>
         <li>
+          <h4>
           <a href="">Sabores</a>
+          </h4>
         </li>
         <li>
+          <h4>
           <a href="">Locales</a>
+          </h4>
         </li>
         <li>
+          <h4>
           <a href="">Contacto</a>
-        </li>
-        <li>
-          <a href="">Cambio</a>
+          </h4>
         </li>
       </ul>
     </nav>
-</header>
 
 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+   <div class="container">
+
+    <a class="btn btn-primary login" data-bs-toggle="offcanvas" href="#offcanvas1">
+      Login
+    </a>   
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvas1">
+      <div class="offcanvas-header">
+        <h3 class="offcanvas-title">Login</h3>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
+      </div>
+      <div class="offcanvas-body">
+        <form>
+          <div class="mb-3">
+            <label for="nombre" class="form-label">Ingrese su nombre:</label>
+            <input type="text" class="form-control" id="nombre" name="nombre">        
+          </div>
+          <div class="mb-3">
+            <label for="clave" class="form-label">Ingrese su clave:</label>
+            <input type="password" class="form-control" id="clave" name="clave">
+          </div>
+          <button type="submit" class="btn btn-primary">Confirmar</button>
+        </form>            
+      </div>
+    </div>    
+  </div>
+
+    
+   <div class="container">
+
+    <a class="btn btn-primary register" data-bs-toggle="offcanvas" href="#offcanvas1">
+      Registrarse
+    </a>   
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvas1">
+      <div class="offcanvas-header">
+        <h3 class="offcanvas-title">Registrarse</h3>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
+      </div>
+      <div class="offcanvas-body">
+        <form>
+          <div class="mb-3">
+            <label for="nombre" class="form-label">Ingrese su nombre:</label>
+            <input type="text" class="form-control" id="nombre" name="nombre">        
+          </div>
+          <div class="mb-3">
+            <label for="clave" class="form-label">Ingrese su clave:</label>
+            <input type="password" class="form-control" id="clave" name="clave">
+          </div>
+          <button type="submit" class="btn btn-primary">Confirmar</button>
+        </form>            
+      </div>
+    </div>    
+  </div>
+
+ </header>
   <main>
 
 <div class="container">
-  <h2>Carousel Example</h2>  
+  
   <div id="myCarousel" class="carousel slide" data-ride="carousel">
     <!-- Indicators -->
     <ol class="carousel-indicators">
@@ -54,15 +117,15 @@
     <!-- Wrapper for slides -->
     <div class="carousel-inner">
       <div class="item active">
-        <img src="" alt="Los Angeles" style="width:100%;">
+        <img width="5000px" src="../public/images/ejemplo.jpg">
       </div>
 
       <div class="item">
-        <img src="" alt="Chicago" style="width:100%;">
+        <img width="5000px"src="../public/images/ejemplo.jpg">
       </div>
     
       <div class="item">
-        <img src="ny.jpg" alt="New york" style="width:100%;">
+        <img width="5000px"src="../public/images/ejemplo.jpg">
       </div>
     </div>
 
@@ -79,14 +142,19 @@
 </div>
   </main>
 
-  <section>
+<section>
     <img class="postre_home_1" src="../public/images/PostreHleado1.png" alt="">
       <img class="postre_home_1" src="../public/images/helado home 2.jpg" alt="">
-      <img class="postre_home_1" src="../public/images/postre helado 3.jpg" alt="">
-      <img class="postre_home_1" src="../public/images/alfajor helado.jpg" alt="">
+      <img class="postre_home_2" src="../public/images/postre helado 3.jpg" alt="">
+      <img class="postre_home_2" src="../public/images/alfajor helado.jpg" alt="">
+
+      <h4 class="texto_home_1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni doloremque corrupti distinctio iusto cum vitae, architecto sit assumenda vero quae ipsa illum eius maiores? Maiores animi iure et soluta laboriosam?</h4>
+      <h4 class="texto_home_2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni doloremque corrupti distinctio iusto cum vitae, architecto sit assumenda vero quae ipsa illum eius maiores? Maiores animi iure et soluta laboriosam?</h4>
+      <h4 class="texto_home_3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni doloremque corrupti distinctio iusto cum vitae, architecto sit assumenda vero quae ipsa illum eius maiores? Maiores animi iure et soluta laboriosam?</h4>
+      <h4 class="texto_home_4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni doloremque corrupti distinctio iusto cum vitae, architecto sit assumenda vero quae ipsa illum eius maiores? Maiores animi iure et soluta laboriosam?</h4>
   </section>
  <footer></footer>
 
-</body>
+
 
 </html>
