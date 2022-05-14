@@ -26,8 +26,9 @@ header nav ul {
 
 
 header nav ul li :hover {
-  background-color:rgb(223, 113, 91);
+  background-color:rgb(182, 104, 89);
   color: black;
+  font-size:larger;
 }
 
 header nav ul a {
@@ -124,21 +125,29 @@ section{
     position: absolute;
     left: 87vw;
     top: 1.5vw;
-    font-family: 'Dancing Script'
+    font-family: 'Dancing Script';
+    color: black;
 
 }
+
 
 .register{
     position: absolute;
     left: 78vw;
     top: 1.5vw;
-    font-family: 'Dancing Script'
+    font-family: 'Dancing Script';
+    color: black;
 }
 
 
 .btn {
-    background-color:brown;
-    border:rgb(10, 10, 10);
+    background-color:rgb(182, 104, 89);
+    font-weight:bold;
+}
+
+.btn:hover {
+    color: white;
+    
 }
 
 
@@ -203,6 +212,10 @@ h3, p {
 	margin-bottom: 30px;
     color:rgb(56, 52, 52);
 
+}
+
+h5 {
+    font-family: 'Dancing Script';
 }
 
 button {
