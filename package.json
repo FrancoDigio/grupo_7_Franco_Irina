@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/FrancoDigio/grupo_7_Franco_Irina#readme",
   "dependencies": {
+    "express": "^4.18.1",
     "nodemon": "^2.0.16"
   }
 }
