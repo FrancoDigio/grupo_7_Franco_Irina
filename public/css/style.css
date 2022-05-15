@@ -48,6 +48,7 @@ header nav ul a {
 main{
     margin-top: 4.5vw;
     height: 25vw;
+    margin-left: 10vw;
 }
 
 
@@ -63,7 +64,7 @@ section{
     margin-top: -200px;
     height: 69vw;
     width: 70vw;
-    margin-left: 12vw;
+    
 }
 
 
@@ -177,7 +178,7 @@ footer {
   }
 
 
-  *{padding: 0; margin: 0; box-sizing: border-box;}
+  *{padding: 0px; margin: 0; box-sizing: border-box;}
 body{height: 900px;}
 header {
 	text-align: center;
@@ -214,18 +215,18 @@ h3, p {
 
 }
 
-h5 {
+h5, h4 {
     font-family: 'Dancing Script';
 }
 
 button {
-	border: none;
+	border: 2px;
 	outline: none;
 	padding: 10px 20px;
 	border-radius: 50px;
 	color: #333;
 	background: #fff;
-	margin-bottom: 50px;
+	margin-bottom: 40px;
 	box-shadow: 0 3px 20px 0 #0000003b;
 }
 button:hover{
@@ -242,3 +243,134 @@ button:hover{
     left: 5px;
     top: -15px;
 }
+
+/*---------------------------productos.html----------------------------------*/
+
+section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 5%;
+  }
+  
+  article {
+      padding: 0px;
+  }
+  
+  
+  
+  .container-flex-box {
+    display: flex;
+    
+  }
+  .flex-grow-30 {
+      
+      width: 200px;
+    flex-grow: 0.3;
+  }
+  .flex-grow-50 {
+    flex-grow: 0.5;
+  }
+  .flex-grow-70 {
+    flex-grow: 0.7;
+  }
+  .list {
+      width: 100px;
+      margin-top: 10vw;
+  }
+  
+  .kilo {
+      margin-left: 50px;
+      
+  }
+    
+  .img {
+    width: 250px;
+    height: 300px;
+}
+
+
+
+div.img img {
+    width: 100%;
+}
+
+
+
+*{
+    box-sizing: border-box;
+  }
+  
+  
+.boton {
+    width: 150px;
+    height: 30px;
+}
+
+/*---------------------------barra de busqueda----------------------------------*/
+
+.search input[type=text]{
+    width:300px;
+    height:25px;
+   
+}
+      
+.search {
+    margin-top: 30px;
+}
+
+
+
+/*---------------------------sabores.html VERSION 2---------------------------------*/
+
+
+        
+       div.titulo{
+        width:80%;
+        height:50px;
+        overflow: hidden;
+        border-bottom: 2px solid rgb(182, 104, 89);
+       }
+        
+       p.titulo{
+        color: rgb(182, 104, 89);
+        text-align: center;
+       }
+
+       div ul li {
+           text-align: center;
+       }
+        
+       div.informacion{
+        width:100%;
+        height:0px;
+        overflow: hidden;
+        transition: 2s;
+        -webkit-transiton: height 2s;
+       }
+        
+      
+       div.seccion:hover div.informacion{
+        height:180px;
+       }
+        
+       
+        
+       .imginformacion{
+        float:CENTER;
+        
+       }
+        
+
+       div.informacion{
+        width:80%;
+        height:0px;
+        overflow: hidden;
+        transition: 2s;
+        -webkit-transiton: height 2s;
+    
+    }
+        
+       div.seccion:hover div.informacion{
+        height:100%;
+       } 
