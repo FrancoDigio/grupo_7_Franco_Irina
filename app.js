@@ -19,6 +19,14 @@ app.get('/productos', (req,res) => {
     res.sendFile(path.join(__dirname,'/views/productos.html'));
 });
 
+app.get('/usuario', (req,res) => {
+    res.sendFile(path.join(__dirname,'/views/usuario.html'));
+});
+
+app.get('/elegir-sabores', (req,res) => {
+    res.sendFile(path.join(__dirname,'/views/elegir-sabores.html'));
+});
+
 app.listen(8000, () =>
     console.log('Levantando un servidor con Express')
     )

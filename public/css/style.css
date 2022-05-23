@@ -26,7 +26,7 @@ header nav ul {
 
 
 header nav ul li :hover {
-  background-color:rgb(182, 104, 89);
+  background-color:rgb(231, 216, 197);
   color: black;
   font-size:larger;
 }
@@ -39,6 +39,50 @@ header nav ul a {
   font-family: 'Dancing Script';
 }
 
+.carrito {
+  position: relative;
+  left: 45%;
+  bottom: 50px;
+  cursor: pointer;
+
+}
+
+.carrito:hover{
+  transform: scale(1.5);
+}
+
+.carrito2 {
+  width: 150px;
+  height: 150px;
+  border: 1px solid;
+  position: relative;
+  right: 25%
+}
+
+.descripcion {
+  position: relative;
+  width: 50%;
+  bottom: 140px;
+  left: 50%;
+}
+
+.producto {
+  position: relative;
+  bottom: 30px
+
+}
+
+.ver-pedido {
+  position: relative;
+  right: 30%;
+}
+
+.terminar-pedido {
+  position: relative;
+  left: 30%;
+  bottom: 35px;
+  
+}
 
 
 /*---------------------------MAIN----------------------------------*/
@@ -128,7 +172,12 @@ section{
     top: 1.5vw;
     font-family: 'Dancing Script';
     color: black;
+    top: 6%;
+}
 
+.login:hover{
+  transform: scale(1.5);
+  color: #000000;
 }
 
 
@@ -191,6 +240,7 @@ header .overlay{
 	color: #FFF;
 	text-shadow: 1px 1px 1px #333;
   background-image: linear-gradient( 135deg, #e2e1de69 10%, #fbf9f96b 100%);
+  margin-top: -1.5%;
 
 	
 }
@@ -582,3 +632,5 @@ button:hover {
   margin-left: 3%;
 
 }
+
+
