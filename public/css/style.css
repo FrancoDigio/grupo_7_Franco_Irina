@@ -414,44 +414,26 @@ div.img img {
 
 
 
-.footer-distributed{
+footer{
 	background: rgb(207, 181, 164);
-	padding: 55px 50px;
-}
-
-.footer-distributed .footer-left,
-.footer-distributed .footer-center,
-.footer-distributed .footer-right{
-	display: inline-block;
-	vertical-align: top;
-}
-
-
-.footer-distributed .footer-left{
-	width: 40%;
 }
 
 
 
-.footer-distributed .footer-links{
+
+p.footer-links{
 	color:  #000000;
-	margin: 20px 0 12px;
+  width: 300px;
 }
 
-.footer-distributed .footer-links a{
+.footer-links a{
 	color:  inherit;
 }
 
 
 
-.footer-distributed .footer-center{
-	width: 35%;
-}
 
-
-
-
-.footer-distributed .footer-links a:before {
+.footer-links a:before {
   content: "|";
   font-size: 20px;
   color: #fff;
@@ -460,11 +442,10 @@ div.img img {
 
 
 
-.footer-distributed .footer-company-about span{
+.footer-company-about span{
 	display: block;
 	color:  black;
-	font-size: 20px;
-	font-weight: bold;
+	font-size: 16px;
 	margin-bottom: 20px;
   position: relative;
   top: 85px;
@@ -475,7 +456,7 @@ div.img img {
 .iconos{
 	width: 55px;
   height: 55px;
-  padding: 10px;
+  padding: 5px;
   position: relative;
   top: 65px;
 }
@@ -486,25 +467,26 @@ div.img img {
 
 
 .logof{
-  width: 98px;
-  height: 98px;
+  width: 120px;
+  height: 120px;
   position: relative;
-  left: 80px;
+  right: 5%;
 }
+
 
 
 .emailf{
   
   position: relative;
-  top: 80px;
-  width: 270px;
+  top: 115px;
+  width: 250px;
   height: 35px;
 }
 
 .botonf{
   position: relative;
-  top: 93px;
-  width: 45px;
+  top: 125px;
+  width: 55px;
   height: 35px;
  
 }
@@ -640,3 +622,38 @@ button:hover {
 }
 
 
+/* DESKTOP */
+@media (min-width: 769px) {
+  
+
+
+footer {
+    display: block;
+    text-align:left;
+}
+
+footer ul {
+    display: flex;
+    justify-content:center;
+    align-items: left;
+}
+
+footer ul li {
+    display: block;
+    margin-right:5%;
+    margin-left: 5%;
+}
+
+
+
+
+.footer-final {
+    text-align: center;
+    margin-top: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 15px;
+
+}
+  
+}
