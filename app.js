@@ -27,6 +27,11 @@ app.get('/elegir-sabores', (req,res) => {
     res.sendFile(path.join(__dirname,'/views/elegir-sabores.html'));
 });
 
+app.get('/pedidos', (req,res) => {
+    res.sendFile(path.join(__dirname,'/views/pedidos.html'));
+});
+
+
 app.listen(8000, () =>
     console.log('Levantando un servidor con Express')
     )

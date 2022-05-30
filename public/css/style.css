@@ -195,10 +195,7 @@ main{
     font-weight:bold;
 }
 
-.btn:hover {
-    color: white;
-    
-}
+
 
 
 .carousel, .carousel-inner > .item > .img {
@@ -291,77 +288,40 @@ button:hover{
     top: -15px;
 }
 
-/*---------------------------productos.html----------------------------------
+/*---------------------------productos.html----------------------------------*/
 
-.section_productos {
-  
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin-top: 5%;
 
-    height: 1000px;
-    margin-left: 300px;
-    margin-top: -300px;
+.row {
+  margin-left: 10%;
+  margin-top: -25%
+}
 
-    height: 500px;
-    position: relative;
-    left: 180px;
-    bottom: 403px;
+.boton-todo {
+  position: relative;
+  left: -10%;
+}
 
-  }
-  
-  .container-flex-box {
-    display: flex;
-    
-  }
-  .flex-grow-30 {   
-    width: 200px;
-    flex-grow: 0.3;
-  }
+.boton-helados {
+  position: relative;
+  left: -10%;
+}
 
-  .flex-grow-50 {
-    flex-grow: 0.5;
-  }
+.boton-paletas {
+  position: relative;
+  left: -10%;
+}
+.boton-tortas {
+  position: relative;
+  left: -10%;
+}
+.boton-alfajores {
+  position: relative;
+  left: -10%;
 
-  .flex-grow-70 {
-    flex-grow: 0.7;
-  }
-
-  .list {
-    width: 370px;
-    margin-top: 10vw;
-  }
-  
-  .kilo {
-      margin-left: 50px;
-      
-  }
-    
-  .img {
-    width: 250px;
-    height: 300px;
 }
 
 
 
-div.img img {
-    width: 100%;
-}
-
-
-
-*{
-    box-sizing: border-box;
-  }
-  
-  
-.boton {
-    width: 150px;
-    height: 30px;
-}
-
----------------------------------------------------------------------*/
 .mainComidas #galeria .col-lg-4 {
   margin: 0 ;
   padding: 25px;
@@ -436,13 +396,27 @@ div.img img {
 
 
 .mainComidas .btn {
-  padding-left: 130px;
-  padding-right: 130px;
+  padding-left: 2%;
+  padding-right: 2%;
   color: black;
-  border: solid cadetblue;
-  background-color: cadetblue;
+  
+  background-color: rgb(219, 180, 136);
+  width: 20%;
+  
 }
 
+
+
+.mainComidas .btn:hover {
+  padding-left: 2%;
+  padding-right: 2%;
+  color: black;
+  background-color:rgb(163, 125, 81);
+  width: 20%;
+  font-size: larger;
+
+  
+}
 
 
 /*---------------------------barra de busqueda----------------------------------*/
@@ -679,17 +653,7 @@ button:hover {
 }
 
 /* buttons hover Animation */
-button:hover {
-    animation: ani9 0.4s ease-in-out infinite alternate;
-}
-@keyframes ani9 {
-    0% {
-        transform: translateY(3px);
-    }
-    100% {
-        transform: translateY(5px);
-    }
-}
+
 .log-in{
   border-style: none;
   text-decoration: solid;
