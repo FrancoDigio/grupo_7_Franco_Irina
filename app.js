@@ -7,29 +7,35 @@ const app = express();
 
 app.use(express.static(publicPath));
 
-app.get('/', (req,res) => {
-    res.sendFile(path.join(__dirname,'/views/home.html'));
-});
+app.set('view engine', 'ejs');
 
-app.get('/sabores', (req,res) => {
-    res.sendFile(path.join(__dirname,'/views/sabores.html'));
-});
 
-app.get('/productos', (req,res) => {
-    res.sendFile(path.join(__dirname,'/views/productos.html'));
-});
+app.get('/', (req, res) => {
+    res.render('home')
+})
 
-app.get('/usuario', (req,res) => {
-    res.sendFile(path.join(__dirname,'/views/usuario.html'));
-});
 
-app.get('/elegir-sabores', (req,res) => {
-    res.sendFile(path.join(__dirname,'/views/elegir-sabores.html'));
-});
+app.get('/sabores', (req, res) => {
+    res.render('sabores')
+})
 
-app.get('/pedidos', (req,res) => {
-    res.sendFile(path.join(__dirname,'/views/pedidos.html'));
-});
+app.get('/productos', (req, res) => {
+    res.render('productos')
+})
+
+app.get('/usuario', (req, res) => {
+    res.render('usuario')
+})
+
+app.get('/elegir-sabores', (req, res) => {
+    res.render('elegir-sabores')
+})
+
+app.get('/pedidos', (req, res) => {
+    res.render('pedidos')
+})
+
+
 
 
 app.listen(8000, () =>

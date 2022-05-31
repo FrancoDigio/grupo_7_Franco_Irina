@@ -94,7 +94,9 @@ main{
     height: 25vw;
     margin-left: 10vw;
 }
-
+.main_productos {
+  height: 50vw
+}
 
 
 
@@ -110,6 +112,8 @@ main{
     width: 70vw;
     margin-left: 200px;
 }
+
+
 
 
 
