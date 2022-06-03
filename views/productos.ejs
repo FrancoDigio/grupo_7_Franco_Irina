@@ -1,0 +1,284 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link href="/css/style.css" rel="stylesheet">
+    <title>HELÁRTICO</title>
+    <link rel="icon" href= "/images/pixlr-bg-result.png" />
+    <script src="https://kit.fontawesome.com/278943c891.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel = ”stylesheet” href = ”https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css”>
+</head>
+
+
+<header>
+
+  <img class="logo ubicar" src="/images/logo_helartico.png">
+  <nav>
+    <ul>
+      <li>
+        <h4> 
+        <a href="/">Inicio</a>
+       </h4>
+      </li>
+      <li>
+        <h4>
+        <a href="/productos">Productos</a>
+        </h4>
+      </li>
+      <li>
+        <h4>
+        <a href="/sabores">Sabores</a>
+        </h4>
+      </li>
+      <li>
+        <h4>
+        <a href="">Locales</a>
+        </h4>
+      </li>
+      <li>
+        <h4>
+        <a href="">Contacto</a>
+        </h4>
+      </li>
+      <li>
+        <h4>
+        </h4>
+      </li>
+    </ul>
+  </nav>
+        <a> 
+          <img class="carrito size" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" src="/images/shopping-cart.png">
+        </a>
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+<div class="offcanvas-header">
+  <h3 id="offcanvasRightLabel">Tu pedido</h3>
+  <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+</div>
+<div class="offcanvas-body">
+  <img class="carrito2" src="/images/alfajor.png" alt="foto-compra"> 
+  <div class="descripcion">
+  <h3 class="producto">Producto</h3>
+  <h4>$000</h4>
+  <label for="cantidad">Cantidad:</label>
+      <select name="cantidad" id="cantidad">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+      </select>
+    </div>
+    <br>
+    <hr>
+    <h3>Total:    $ </h3>
+    <button class="btn ver-pedido" type= "button" >Ver pedido</button><br>
+    <button class="btn terminar-pedido" type="button" >Terminar pedido</button>
+
+
+
+
+</div>
+</div>
+        
+  <div class="overlay">
+<h1>HELÁRTICO</h1>
+
+
+ <div>
+
+  <a class="size login" href="/usuario"><i class="fa-solid fa-user"></i>
+  </a>   
+  
+
+ </div>
+
+</header>
+
+<main class="main_productos mainComidas">
+
+
+  <section id="galeria" class="container btn-group-vertical">
+    
+    
+      <input type="radio" class="btn-check" name="btnradio" id="btnradio1" checked>
+      <label class="btn boton-todo" for="btnradio1">Todo</label>
+
+      <input type="radio" class="btn-check" name="btnradio" id="btnradio2" >
+      <label class="btn boton-helados" for="btnradio2">Helados</label>
+
+      <input type="radio" class="btn-check" name="btnradio" id="btnradio3" >
+      <label class="btn boton-paletas " for="btnradio3">Paletas</label>
+
+      <input type="radio" class="btn-check" name="btnradio" id="btnradio4" >
+      <label class="btn boton-tortas " for="btnradio4">Tortas</label>
+
+       <input type="radio" class="btn-check" name="btnradio" id="btnradio5" >
+      <label class="btn boton-alfajores " for="btnradio5">Alfajores</label>
+
+   
+
+
+      <div class="row">
+
+         <div class="col-lg-4 col-md-6 col-md-12 Helados">
+            <img src="images/kilo.png" alt="Helado">
+            <div class="img container-flex-box">
+              <h5 class="flex-grow-30">1 KG</h5>
+              <h5 class="flex-grow-30">$1.250</h5>
+              <a href="/sabores"><button class=" boton">Elegir gustos</button></a>
+              <a href=""><button class="boton">Añadir al carrito</button></a>
+            </div>
+          </div>
+
+
+
+          <div class="col-lg-4 col-md-6 col-md-12 Helados">
+              <img src="images/cuarto.jpg" alt="">
+              <div class="img container-flex-box">
+              <h5 class="flex-grow-30">1/2 KG - HASTA 3 GUSTOS</h5>
+              <h5 class="flex-grow-30">$850</h5>
+              <button class="boton">Añadir al carrito</button>
+              </div>
+          </div>
+
+
+
+          <div class="col-lg-4 col-md-6 col-md-12 Helados">
+              <img src="images/medio-kilo.png" alt="">
+              <div class="img container-flex-box">
+              <h5 class="flex-grow-30">1/4 KG - HASTA 2 GUSTOS</h5>
+              <h5 class="flex-grow-30">$450</h5>
+              <button class="boton">Añadir al carrito</button>
+            </div>
+          </div>
+
+
+
+          <div class="col-lg-4 col-md-6 col-md-12 Tortas">
+              <img src="images/almendrado.jpg" alt="">
+              <div class="img container-flex-box">
+              <h5 class="flex-grow-30">1/4 KG - HASTA 2 GUSTOS</h5>
+              <h5 class="flex-grow-30">$450</h5>
+              <button class="boton">Añadir al carrito</button>
+            </div>
+          </div>
+
+
+
+          <div class="col-lg-4 col-md-6 col-md-12 Paletas">
+              <img src="images/paleta1.jpg" alt="">
+              <div class="img container-flex-box">
+              <h5 class="flex-grow-30">1/4 KG - HASTA 2 GUSTOS</h5>
+              <h5 class="flex-grow-30">$450</h5>
+              <button class="boton">Añadir al carrito</button>
+            </div>
+          </div>
+
+
+
+          <div class="col-lg-4 col-md-6 col-md-12 Paletas">
+              <img src="images/paleta2.jpg" alt="">
+              <div class="img container-flex-box">
+              <h5 class="flex-grow-30">1/4 KG - HASTA 2 GUSTOS</h5>
+              <h5 class="flex-grow-30">$450</h5>
+              <button class="boton">Añadir al carrito</button>
+            </div>
+          </div>
+
+
+
+          <div class="col-lg-4 col-md-6 col-md-12 Alfajores">
+              <img src="images/alfajor.png" alt="">
+              <div class="img container-flex-box">
+              <h5 class="flex-grow-30">1/4 KG - HASTA 2 GUSTOS</h5>
+              <h5 class="flex-grow-30">$450</h5>
+              <button class="boton">Añadir al carrito</button>
+            </div>
+          </div>
+
+
+
+          <div class="col-lg-4 col-md-6 col-md-12 Tortas">
+              <img src="images/foto4.jpg" alt="">
+              <div class="img container-flex-box">
+              <h5 class="flex-grow-30">1/4 KG - HASTA 2 GUSTOS</h5>
+              <h5 class="flex-grow-30">$450</h5>
+              <button class="boton">Añadir al carrito</button>
+            </div>
+          </div>
+
+
+
+          <div class="col-lg-4 col-md-6 col-md-12 Tortas">
+              <img src="images/foto5.png" alt="">
+              <div class="img container-flex-box">
+              <h5 class="flex-grow-30">1/4 KG - HASTA 2 GUSTOS</h5>
+              <h5 class="flex-grow-30">$450</h5>
+              <button class="boton">Añadir al carrito</button>
+            </div>
+          </div>
+
+
+
+          <div class="col-lg-4 col-md-6 col-md-12 Tortas">
+              <img src="images/foto6.png" alt="">
+              <div class="img container-flex-box">
+              <h5 class="flex-grow-30">1/4 KG - HASTA 2 GUSTOS</h5>
+              <h5 class="flex-grow-30">$450</h5>
+              <button class="boton">Añadir al carrito</button>
+            </div>
+          </div>
+
+
+
+          <div class="col-lg-4 col-md-6 col-md-12 Tortas">
+              <img src="images/foto7.png" alt="">
+              <div class="img container-flex-box">
+              <h5 class="flex-grow-30">1/4 KG - HASTA 2 GUSTOS</h5>
+              <h5 class="flex-grow-30">$450</h5>
+              <button class="boton">Añadir al carrito</button>
+            </div>
+          </div>
+
+
+
+          <div class="col-lg-4 col-md-6 col-md-12 Alfajores">
+              <img src="images/franui1.jpg" alt="">
+              <div class="img container-flex-box">
+              <h5 class="flex-grow-30">1/4 KG - HASTA 2 GUSTOS</h5>
+              <h5 class="flex-grow-30">$450</h5>
+              <button class="boton">Añadir al carrito</button>
+            </div>
+          </div>
+
+
+
+          <div class="col-lg-4 col-md-6 col-md-12 Tortas">
+              <img src="images/torta-oreo.jpg" alt="">
+              <div class="img container-flex-box">
+              <h5 class="flex-grow-30">1/4 KG - HASTA 2 GUSTOS</h5>
+              <h5 class="flex-grow-30">$450</h5>
+              <button class="boton">Añadir al carrito</button>
+            </div>
+          </div>
+
+
+
+      </div> 
+        
+    </section>
+    
+  </main>
+  <footer>
+  <%- include('./partials/footer') %>
+</footer>
+</html>
