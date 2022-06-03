@@ -10,7 +10,7 @@ router.get('/', productsController.index);
 
 /*
 /*** CREATE ONE PRODUCT ***/ 
-router.get('/create', productsController.formNew);
+router.get("/create", productsController.createForm);
 router.post('/',productsController.create)
 
 /*** GET ONE PRODUCT ***/ 

@@ -23,9 +23,9 @@ const controller = {
 	},
 
 	
-	formNew: function(req, res) {
-        return res.render('form');
-    },
+	createForm: (req, res) => {
+		res.render("create");
+	  },
 
 	
 	create: function(req, res) {
