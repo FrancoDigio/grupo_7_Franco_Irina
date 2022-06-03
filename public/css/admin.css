@@ -1,0 +1,12 @@
+.section_adm {
+    border: solid;
+    background-color: antiquewhite;
+    padding: 5%;
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 10%;
+  }
+
+body {
+    border: solid;
+}

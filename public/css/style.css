@@ -1,0 +1,714 @@
+
+
+/*---------------------------HEADER----------------------------------*/
+
+header {
+position: fixed;
+top: -25px;
+width: 100%;
+
+
+}
+
+header nav ul {
+    
+  background-color:rgb(207, 181, 164);
+  margin: 0;
+  list-style: none;
+  padding: 0;
+  /*REVISAR---------------------------------*/
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: center;
+  
+}
+
+
+header nav ul li :hover {
+  background-color:rgb(231, 216, 197);
+  color: black;
+  font-size:larger;
+}
+
+header nav ul a {
+  display: block;
+  padding: 15px 20px;
+  color: rgb(10, 10, 10);
+  text-decoration: none;
+  font-family: 'Dancing Script';
+}
+
+.carrito {
+  position: relative;
+  left: 45%;
+  bottom: 50px;
+  cursor: pointer;
+
+}
+
+.carrito:hover{
+  transform: scale(1.5);
+}
+
+.carrito2 {
+  width: 150px;
+  height: 150px;
+  border: 1px solid;
+  position: relative;
+  right: 25%
+}
+
+.descripcion {
+  position: relative;
+  width: 50%;
+  bottom: 140px;
+  left: 50%;
+}
+
+.producto {
+  position: relative;
+  bottom: 30px
+
+}
+
+.ver-pedido {
+  position: relative;
+  right: 30%;
+}
+
+.terminar-pedido {
+  position: relative;
+  left: 30%;
+  bottom: 35px;
+  
+}
+
+
+/*---------------------------MAIN----------------------------------*/
+
+
+
+main{
+    margin-top: 4.5vw;
+    height: 25vw;
+    margin-left: 10vw;
+}
+.main_productos {
+  height: 50vw
+}
+
+
+
+
+
+/*---------------------------SECTION----------------------------------*/
+.section_home{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: -200px;
+    height: 69vw;
+    width: 70vw;
+    margin-left: 200px;
+}
+
+
+
+
+
+.postre_home_1{
+    border-radius: 50%;
+    width: 24vw;
+    height: 25vw;
+    object-fit: cover;
+    margin-left: 7vw;
+}
+
+.postre_home_2{
+    border-radius: 50%;
+    width: 24vw;
+    height: 25vw;
+    object-fit: cover;
+    margin-left: 7vw;
+    margin-top: 6vw;
+}
+
+
+.texto_home_1{
+    margin-left: 11vw;
+    margin-right: 35vw;
+    position: relative;
+    bottom: 31.2vw;
+}
+
+.texto_home_2{
+    margin-left: 11vw;
+    margin-right: 35vw;
+    position: relative;
+    bottom: 4.7vw;
+}
+
+.texto_home_3{
+    
+    margin-left: 42vw;
+    margin-right: 4vw;
+    position: relative;
+    bottom: 40.5vw;
+}
+
+.texto_home_4{
+    margin-left: 42vw;
+    margin-right: 4vw;
+    position: relative;
+    bottom: 14.1vw;
+}
+
+
+
+
+
+
+
+.login{
+    position: absolute;
+    left: 87vw;
+    top: 1.5vw;
+    font-family: 'Dancing Script';
+    color: black;
+    top: 6%;
+}
+
+.login:hover{
+  transform: scale(1.5);
+  color: #000000;
+}
+
+
+.register{
+    position: absolute;
+    left: 78vw;
+    top: 1.5vw;
+    font-family: 'Dancing Script';
+    color: black;
+}
+
+
+.btn {
+    background-color:rgb(182, 104, 89);
+    font-weight:bold;
+}
+
+
+
+
+.carousel, .carousel-inner > .item > .img {
+  position:absolute;
+  left: 0px;
+  right: 0px;
+  top: 65px;
+  z-index: -1;
+}
+
+.size {
+    width: 20px;
+    height: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+header {
+	text-align: center;
+	width: 100%;
+	height: auto;
+	background-size: cover;
+	background-attachment: fixed;
+	position: relative;
+	overflow: hidden;
+	/*border-radius: 0 0 85% 85% / 30%;*/ 
+}
+
+
+header .overlay{
+	width: 100%;
+	height: 100%;
+	padding: 7px;
+	color: #FFF;
+	text-shadow: 1px 1px 1px #333;
+  background-image: linear-gradient( 135deg, #e2e1de69 10%, #fbf9f96b 100%);
+  margin-top: -1.5%;
+
+	
+}
+
+h1 {
+	font-family: 'Dancing Script';
+    color:rgb(56, 52, 52);
+	font-size: 80px;
+	margin-bottom: 30px;
+}
+
+
+h3, p {
+	font-family: 'Dancing Script';
+	margin-bottom: 30px;
+    color: #333;
+
+}
+
+h5, h4 {
+    font-family: 'Dancing Script';
+}
+
+.button_carrusel {
+	border: 2px;
+	outline: none;
+	padding: 10px 20px;
+	border-radius: 50px;
+	color: #333;
+	background: #fff;
+	margin-bottom: 40px;
+	box-shadow: 0 3px 20px 0 #0000003b;
+}
+button:hover{
+	cursor: pointer;
+}
+/*---------------------------logo----------------------------------*/
+.logo {
+    width: 98px;
+    height: 98px;
+}
+
+.ubicar {
+    position: absolute;
+    left: 5px;
+    top: -15px;
+}
+
+/*---------------------------productos.html----------------------------------*/
+
+
+.row {
+  margin-left: 10%;
+  margin-top: -25%
+}
+
+.boton-todo {
+  position: relative;
+  left: -10%;
+}
+
+.boton-helados {
+  position: relative;
+  left: -10%;
+}
+
+.boton-paletas {
+  position: relative;
+  left: -10%;
+}
+.boton-tortas {
+  position: relative;
+  left: -10%;
+}
+.boton-alfajores {
+  position: relative;
+  left: -10%;
+
+}
+
+
+
+.mainComidas #galeria .col-lg-4 {
+  margin: 0 ;
+  padding: 25px;
+}
+
+.mainComidas #galeria img {
+  object-fit: cover;
+  width: 100%;
+  height: 250px;
+}
+
+.mainComidas #galeria img:hover {
+  border: 5px solid white;
+}
+
+.mainComidas .card-title {
+  color: black;
+  border: solid;
+  text-align: center;
+  margin-top: 100px;
+  font-size: 30px;
+}
+
+.mainComidas #btnradio2:checked ~ .row > .Paletas{
+  display: none;
+}
+
+.mainComidas #btnradio2:checked ~ .row > .Tortas {
+  display: none;
+}
+
+.mainComidas #btnradio2:checked ~ .row > .Alfajores {
+  display: none;
+}
+
+.mainComidas #btnradio3:checked ~ .row > .Helados {
+  display: none;
+}
+
+.mainComidas #btnradio3:checked ~ .row > .Tortas {
+  display: none;
+}
+
+.mainComidas #btnradio3:checked ~ .row > .Alfajores {
+  display: none;
+}
+
+.mainComidas #btnradio4:checked ~ .row > .Helados {
+  display: none;
+}
+
+.mainComidas #btnradio4:checked ~ .row > .Paletas {
+  display: none;
+}
+
+.mainComidas #btnradio4:checked ~ .row > .Alfajores {
+  display: none;
+}
+
+.mainComidas #btnradio5:checked ~ .row > .Helados {
+  display: none;
+}
+
+.mainComidas #btnradio5:checked ~ .row > .Paletas {
+  display: none;
+}
+
+.mainComidas #btnradio5:checked ~ .row > .Tortas {
+  display: none;
+}
+
+
+
+.mainComidas .btn {
+  padding-left: 2%;
+  padding-right: 2%;
+  color: black;
+  
+  background-color: rgb(219, 180, 136);
+  width: 20%;
+  
+}
+
+
+
+.mainComidas .btn:hover {
+  padding-left: 2%;
+  padding-right: 2%;
+  color: black;
+  background-color:rgb(163, 125, 81);
+  width: 20%;
+  font-size: larger;
+
+  
+}
+
+
+/*---------------------------barra de busqueda----------------------------------*/
+
+.search input[type=text]{
+    width:300px;
+    height:25px;
+   
+}
+      
+.search {
+    margin-top: 30px;
+    text-align: center;
+}
+
+
+
+/*---------------------------sabores.html VERSION 2---------------------------------*/
+
+.accordion{
+  position: relative;
+  right: 5.4vw;
+}
+.accordion-button{
+  background-color: rgb(216, 162, 123);
+ 
+  
+ 
+}
+
+.accordion-header{
+  border: 2px solid rgb(15, 15, 15);
+  background-color: chocolate;
+  justify-content: center;
+}
+
+.accordion-item{
+  text-align: center;
+}
+ 
+
+
+
+
+
+
+
+
+/*---------------------------------------------------------------------------------------FOOTER---------------------------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------------FOOTER---------------------------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------------FOOTER---------------------------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------------FOOTER---------------------------------------------------------------------------------------------*/
+
+
+
+footer{
+	background: rgb(207, 181, 164);
+}
+
+
+
+
+p.footer-links{
+	color:  #000000;
+  width: 300px;
+}
+
+.footer-links a{
+	color:  inherit;
+}
+
+
+
+
+.footer-links a:before {
+  content: "|";
+  font-size: 20px;
+  color: #fff;
+  padding-right: 5px;
+}
+
+
+
+.footer-company-about span{
+	display: block;
+	color:  black;
+	font-size: 16px;
+	margin-bottom: 20px;
+  position: relative;
+  top: 85px;
+}
+
+
+
+.iconos{
+	width: 55px;
+  height: 55px;
+  padding: 5px;
+  position: relative;
+  top: 65px;
+}
+
+.titulo_footer{
+  font-size: 50px;
+}
+
+
+.logof{
+  width: 120px;
+  height: 120px;
+  position: relative;
+  right: 5%;
+}
+
+
+
+.emailf{
+  
+  position: relative;
+  top: 115px;
+  width: 250px;
+  height: 35px;
+}
+
+.botonf{
+  position: relative;
+  top: 125px;
+  width: 55px;
+  height: 35px;
+ 
+}
+
+
+/*--------------------------------------------------------------------------------------loginnn-formulario---------------------------------------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+/* End body rules */
+
+/* Start form  attributes */
+form {
+    width: 290px;
+    min-height: 500px;
+    height: auto;
+    border-radius: 5px;
+    margin: 2% auto;
+    box-shadow: 0 9px 50px hsla(20, 67%, 75%, 0.31);
+    padding: 1%;
+    background-color:rgb(207, 181, 164);
+}
+/* form Container */
+form .con {
+    display: -webkit-flex;
+    display: flex;
+  
+    -webkit-justify-content: space-around;
+    justify-content: space-around;
+  
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+  
+      margin: 0 auto;
+}
+
+/* the header form form */
+header {
+    margin: 2% auto 10% auto;
+    text-align: center;
+}
+/* Login title form form */
+header h2 {
+    font-size: 250%;
+    font-family: 'Dancing Script';
+    color: #3e403f;
+}
+/*  A welcome message or an explanation of the login form */
+header p {letter-spacing: 0.05em;}
+
+
+
+
+/* inputs form  */
+input[class="form-input"]{
+    width: 200px;
+    height: 50px;
+  
+    margin-top: 2%;
+    padding: 15px;
+    
+    font-size: 16px;
+    font-family: 'Dancing Script';
+    color: #5E6472;
+
+    border: none;
+  
+    border-radius: 0px 5px 5px 0px;
+    transition: 0.2s linear;
+    
+}
+input[id="txt-input"] {width: 200px;}
+/* focus  */
+input:focus {
+    transform: translateX(-2px);
+    border-radius: 5px;
+}
+
+
+
+/* Submits */
+.submits {
+    width: 48%;
+    display: inline-block;
+    margin-left: 25%;
+    margin-bottom: 30%;
+}
+
+/*       Forgot Password button FAF3DD  */
+.frgt-pass {background: transparent;}
+
+/*     Sign Up button  */
+.sign-up {background:white}
+
+
+/* buttons hover */
+button:hover {
+    transform: translatey(3px);
+    box-shadow: none;
+}
+
+/* buttons hover Animation */
+
+.log-in{
+  border-style: none;
+  text-decoration: solid;
+  font-size:'Dancing Script'; 
+  font-size: 18px;
+  background-color: #FFF;
+  border-radius: 10%;
+  padding: 2%;
+  width: 48%;
+  position: relative;
+  top: 50%;
+  margin-left: 3%;
+
+}
+
+
+/* DESKTOP */
+@media (min-width: 769px) {
+  
+
+
+footer {
+    display: block;
+    text-align:left;
+}
+
+footer ul {
+    display: flex;
+    justify-content:center;
+    align-items: left;
+}
+
+footer ul li {
+    display: block;
+    margin-right:5%;
+    margin-left: 5%;
+}
+
+
+
+
+.footer-final {
+    text-align: center;
+    margin-top: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 15px;
+
+}
+  
+}
+
+
+
