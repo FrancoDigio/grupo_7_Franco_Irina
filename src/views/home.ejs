@@ -1,31 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <link href="/css/style.css" rel="stylesheet">
-    <link rel="stylesheet" href="/css/dekopt.css">
-    <title>HELÁRTICO</title>
-    <link rel="icon" href= "/images/pixlr-bg-result.png" />
-    <script src="https://kit.fontawesome.com/278943c891.js" crossorigin="anonymous"></script>
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <%- include('./partials/head') %>
 </head>
 
 
-  <header>
+<header>
 
     <img class="logo ubicar" src="/images/logo_helartico.png">
     <nav>
       <ul>
         <li>
           <h4> 
-          <a href="/">Inicioo</a>
+          <a href="/">Inicio</a>
          </h4>
         </li>
         <li>
@@ -151,57 +138,10 @@
       <h4 class="texto_home_3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni doloremque corrupti distinctio iusto cum vitae, architecto sit assumenda vero quae ipsa illum eius maiores? Maiores animi iure et soluta laboriosam?</h4>
       <h4 class="texto_home_4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni doloremque corrupti distinctio iusto cum vitae, architecto sit assumenda vero quae ipsa illum eius maiores? Maiores animi iure et soluta laboriosam?</h4>
   </section>
-  <footer>
 
-    <ul>
-        <li>
-        
-            <div class="footer-left">
-              <img class="logof" src="/images/logo_helartico.png">
-        
-              <h3 class="titulo_footer">HELÁRTICO</h3>
-        
-              <p class="footer-links">
-                <a href="/" class="link-1">Inicio</a>
-                
-                <a href="/productos">Productos</a>
-              
-                <a href="/sabores">Sabores</a>
-              
-                <a href="#">Locales</a>
-                
-                <a href="#">Contacto</a>
-                
-              </p>
-            </div>
-
-        </li>
-        <li>
   
-              <p class="footer-company-about">
-                <span>Novedades</span>
-                <span>Recibí promociones y beneficios exclusivos:</span>
-                <input class="emailf" type="text" value="Email">
-                <button class="botonf"></button>
-              </p>
-        </li>
-
-        <li>
-            
-          <p class="footer-company-about">
-            <span>Redes sociales</span>
-            <span>Seguinos en:</span>
-          </p>
-            
-      
-              <a href=""><img class="iconos" src="/images/logo face.png" alt=""></i></a>
-              <a href="#"><img class="iconos" src="/images/logo ig.png" alt=""></i></a>
-              <a href="#"><img class="iconos" src="/images/logo wpp.png" alt=""></a>
-        </li>
-        
-    </ul>
-    <h5 class="footer-final">© 2022 Helartico S.R.L.</h5>
-
+<footer>
+<div class="footer_home"><%- include('./partials/footer') %></div>
 </footer>
 
 

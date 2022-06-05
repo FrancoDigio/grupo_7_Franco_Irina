@@ -6,7 +6,9 @@ header {
 position: fixed;
 top: -25px;
 width: 100%;
-
+position: relative;
+margin: 2% auto 10% auto;
+text-align: center;
 
 }
 
@@ -224,29 +226,10 @@ main{
 
 
 
-header {
-	text-align: center;
-	width: 100%;
-	height: auto;
-	background-size: cover;
-	background-attachment: fixed;
-	position: relative;
-	overflow: hidden;
-	/*border-radius: 0 0 85% 85% / 30%;*/ 
-}
 
 
-header .overlay{
-	width: 100%;
-	height: 100%;
-	padding: 7px;
-	color: #FFF;
-	text-shadow: 1px 1px 1px #333;
-  background-image: linear-gradient( 135deg, #e2e1de69 10%, #fbf9f96b 100%);
-  margin-top: -1.5%;
 
-	
-}
+
 
 h1 {
 	font-family: 'Dancing Script';
@@ -476,9 +459,7 @@ button:hover{
 
 
 
-footer{
-	background: rgb(207, 181, 164);
-}
+
 
 
 
@@ -592,18 +573,7 @@ form .con {
 }
 
 /* the header form form */
-header {
-    margin: 2% auto 10% auto;
-    text-align: center;
-}
-/* Login title form form */
-header h2 {
-    font-size: 250%;
-    font-family: 'Dancing Script';
-    color: #3e403f;
-}
-/*  A welcome message or an explanation of the login form */
-header p {letter-spacing: 0.05em;}
+
 
 
 
@@ -674,14 +644,14 @@ button:hover {
 }
 
 
-/* DESKTOP */
-@media (min-width: 769px) {
+
   
 
 
 footer {
     display: block;
     text-align:left;
+    background: rgb(207, 181, 164);
 }
 
 footer ul {
@@ -708,7 +678,19 @@ footer ul li {
 
 }
   
+.footer_home{
+  margin-bottom: -10px;
 }
 
+.footer_productos{
+  position: absolute;
+  bottom: -1900px;
+  width: 100%;
+}
 
+.footer_sabores{
+  margin-bottom: -10px;
+  position: relative;
+  bottom: -500px;
+}
 
