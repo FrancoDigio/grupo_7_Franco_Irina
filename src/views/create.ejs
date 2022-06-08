@@ -1,21 +1,25 @@
-<%- include('../partials/head') %>
+<%- include('./partials/head') %>
 
   <link rel="stylesheet" href="/css/style.css">
   </head>
   
   <body>
-    <%- include('../partials/header') %>
-    <h1>Nuevo Producto</h1>
+    <%- include('./partials/header') %>
+    <h2>Nuevo Producto</h2>
     
-    <form action="/products/create" method="POST">
+    <form action="/productos/create" method="POST">
         <div>
-            <label for="name">Nombre</label>
-            <input type="text" name="name" id="name">
+            <label for="nombre">Nombre</label>
+            <input type="text" name="nombre" id="name">
+        </div>
+        <div>
+          <label for="imagen">Imagen</label>
+          <input accept="image/*" type="file" multiple>>
         </div>
 
         <div>
-            <label for="price">Precio</label>
-            <input type="text" name="price" id="price">
+            <label for="precio">Precio</label>
+            <input type="text" name="precio" id="price">
         </div>
 
         <div>

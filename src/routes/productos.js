@@ -6,26 +6,21 @@ const router = express.Router();
 const productsController = require('../controllers/productsController');
 
 /*** GET ALL PRODUCTS ***/ 
-router.get('/', productsController.index); 
+router.get('/', productsController.home); 
 
 /*
 /*** CREATE ONE PRODUCT ***/ 
 router.get("/create", productsController.createForm);
-router.post('/',productsController.create)
+router.post('/create',productsController.create)
 
-/*** GET ONE PRODUCT ***/ 
-//router.???('/:id/', productsController.detail); 
+
 
 /*** EDIT ONE PRODUCT ***/ 
-router.put('/producto/:id',(req,res)=>{
-    let id_producto = req.params.id
-    producto.filter(elem => {
-        if (elem.id == id_producto) {
-            elem.descripcion = req.body.descripcion
-            elem.precio = req.body.precio
-        }
-    })
-})
+router.get("/edit/:id", productsController.editForm);
+
+
+
+
 
 
 /*** DELETE ONE PRODUCT***/ 

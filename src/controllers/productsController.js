@@ -1,54 +1,55 @@
 const fs = require('fs');
 const path = require('path');
 
-/*
+
 
 const productsFilePath = path.join(__dirname, '../data/productsDataBase.json');
 const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
-*/
 
-let products = [
-    { id: 1, name: 'Product 1', price: 100, img: 'ruta..' },
-    { id: 2, name: 'Product 2', price: 99, img: 'ruta..' },
-    { id: 3, name: 'Product 3', price: 300, img: 'ruta..' }
-]
+
 
 
 const toThousand = n => n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
 
 const controller = {
-	// Root - Show all products
-	index: (req, res) => {
+	home: (req, res) => {
 		res.render("productos", {products:products})
 	},
 
 	
 	createForm: (req, res) => {
-		res.render("create");
+		res.render("create", {products});
 	  },
 
 	
 	create: function(req, res) {
+	let productos = JSON.parse(fs.readFileSync(productsFilePath, "utf-8"));
+    
+    let nuevoProducto = {
+      id: productos[productos.length - 1].id + 1,
+      nombre: req.body.nombre,
+      precio: req.body.precio,
+      imagen: "defaultImg.jpg",
+    };
+
+    productos.push(nuevoProducto);
+    
+    let nuevoProductoGuardar = JSON.stringify(productos, null, 2);
+    fs.writeFileSync(productsFilePath, nuevoProductoGuardar, "utf-8");
+    
+    res.redirect("/productos");
 		
-        //guardo el nuevo producto con la estructura
-        productos.push({ id: 99, name: req.body.name, price: req.body.price, img: 'ruta..' })
-
-        //redireccione al listado de productos        
-        return res.redirect('/products');},
+       },
 	
-	// Create -  Method to store
-	store: (req, res) => {
-		// Do the magic
+	editForm: (req, res) => {
+	let productos = JSON.parse(fs.readFileSync(productsFilePath, "utf-8"));
+	
+	const id = req.params.id;
+	let productoEditar = productos.find((prod) => prod.id == id);
+	res.render("edit", { productoEditar });
 	},
-
-	// Update - Form to edit
-	edit: (req, res) => {
-		// Do the magic
-	},
-	// Update - Method to update
-	update: (req, res) => {
-		// Do the magic
-	},
+	
+	
 
 	// Delete - Delete one product from DB
 	destroy : (req, res) => {

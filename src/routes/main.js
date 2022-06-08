@@ -5,7 +5,7 @@ const router = express.Router();
 // ************ Controller Require ************
 const mainController = require('../controllers/mainController');
 
-router.get('/', mainController.index); 
+router.get('/', mainController.home); 
 
 /*router.???('/search', mainController.search); */
 

@@ -3,7 +3,7 @@ const cookieParser = require('cookie-parser');
 const express = require('express');
 const logger = require('morgan');
 const path = require('path');
-const methodOverride =  require('method-override'); // Pasar poder usar los métodos PUT y DELETE
+const methodOverride =  require('method-override'); 
 
 // ************ express() - (don't touch) ************
 const app = express();
@@ -25,7 +25,7 @@ app.set('views', path.join(__dirname, '/views')); // Define la ubicación de la 
 // ************ WRITE YOUR CODE FROM HERE ************
 // ************ Route System require and use() ************
 const mainRouter = require('./routes/main'); // Rutas main
-const productsRouter = require('./routes/products'); // Rutas /products
+const productsRouter = require('./routes/productos'); // Rutas /products
 const usuarioRouter = require('./routes/usuario'); 
 const adminRouter = require('./routes/admin'); 
 const saboresRouter = require('./routes/sabores'); 
