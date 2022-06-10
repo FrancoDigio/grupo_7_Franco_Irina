@@ -1,0 +1,132 @@
+
+
+
+/*---------------------------barra de busqueda----------------------------------*/
+
+.search input[type=text]{
+    width:300px;
+    height:25px;
+   
+}
+      
+.search {
+    margin-top: 30px;
+    text-align: center;
+}
+
+
+
+/*--------------------------------------------------------------------------------------loginnn-formulario---------------------------------------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+/* End body rules */
+
+/* Start form  attributes */
+form {
+    width: 290px;
+    min-height: 500px;
+    height: auto;
+    border-radius: 5px;
+    margin: 2% auto;
+    box-shadow: 0 9px 50px hsla(20, 67%, 75%, 0.31);
+    padding: 1%;
+    background-color:rgb(207, 181, 164);
+}
+/* form Container */
+form .con {
+    display: -webkit-flex;
+    display: flex;
+  
+    -webkit-justify-content: space-around;
+    justify-content: space-around;
+  
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+  
+      margin: 0 auto;
+}
+
+/* the header form form */
+
+
+
+
+
+/* inputs form  */
+input[class="form-input"]{
+    width: 200px;
+    height: 50px;
+  
+    margin-top: 2%;
+    padding: 15px;
+    
+    font-size: 16px;
+    font-family: 'Dancing Script';
+    color: #5E6472;
+
+    border: none;
+  
+    border-radius: 0px 5px 5px 0px;
+    transition: 0.2s linear;
+    
+}
+input[id="txt-input"] {width: 200px;}
+/* focus  */
+input:focus {
+    transform: translateX(-2px);
+    border-radius: 5px;
+}
+
+
+
+/* Submits */
+.submits {
+    width: 48%;
+    display: inline-block;
+    margin-left: 25%;
+    margin-bottom: 30%;
+}
+
+/*       Forgot Password button FAF3DD  */
+.frgt-pass {background: transparent;}
+
+/*     Sign Up button  */
+.sign-up {background:white}
+
+
+/* buttons hover */
+button:hover {
+    transform: translatey(3px);
+    box-shadow: none;
+}
+
+/* buttons hover Animation */
+
+.log-in{
+  border-style: none;
+  text-decoration: solid;
+  font-size:'Dancing Script'; 
+  font-size: 18px;
+  background-color: #FFF;
+  border-radius: 10%;
+  padding: 2%;
+  width: 48%;
+  position: relative;
+  top: 50%;
+  margin-left: 3%;
+
+}
+
+
+
+  
+
+
+

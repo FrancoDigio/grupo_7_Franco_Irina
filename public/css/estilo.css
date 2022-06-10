@@ -133,14 +133,12 @@ header nav ul a {
 
 
 
-main{
-    margin-top: 4.5vw;
-    height: 25vw;
-    margin-left: 10vw;
+.main_home{
+  text-align: center;
+  margin-top: -150px;
+  margin-bottom: 600px;
 }
-.main_productos {
-  height: 50vw
-}
+
 
 
 
@@ -245,7 +243,6 @@ main{
     top: 1.5vw;
     font-family: 'Dancing Script';
     color: black;
-    top: 6%;
 }
 
 .login:hover{
@@ -263,10 +260,7 @@ main{
 }
 
 
-.btn {
-    background-color:rgb(182, 104, 89);
-    font-weight:bold;
-}
+
 
 
 
@@ -362,29 +356,11 @@ main{
   margin-top: -25%
 }
 
-.boton-todo {
-  position: relative;
-  left: -10%;
-}
 
-.boton-helados {
-  position: relative;
-  left: -10%;
-}
 
-.boton-paletas {
-  position: relative;
-  left: -10%;
-}
-.boton-tortas {
-  position: relative;
-  left: -10%;
-}
-.boton-alfajores {
-  position: relative;
-  left: -10%;
 
-}
+
+
 
 
 
@@ -411,78 +387,15 @@ main{
   font-size: 30px;
 }
 
-.mainComidas #btnradio2:checked ~ .row > .Paletas{
-  display: none;
-}
-
-.mainComidas #btnradio2:checked ~ .row > .Tortas {
-  display: none;
-}
-
-.mainComidas #btnradio2:checked ~ .row > .Alfajores {
-  display: none;
-}
-
-.mainComidas #btnradio3:checked ~ .row > .Helados {
-  display: none;
-}
-
-.mainComidas #btnradio3:checked ~ .row > .Tortas {
-  display: none;
-}
-
-.mainComidas #btnradio3:checked ~ .row > .Alfajores {
-  display: none;
-}
-
-.mainComidas #btnradio4:checked ~ .row > .Helados {
-  display: none;
-}
-
-.mainComidas #btnradio4:checked ~ .row > .Paletas {
-  display: none;
-}
-
-.mainComidas #btnradio4:checked ~ .row > .Alfajores {
-  display: none;
-}
-
-.mainComidas #btnradio5:checked ~ .row > .Helados {
-  display: none;
-}
-
-.mainComidas #btnradio5:checked ~ .row > .Paletas {
-  display: none;
-}
-
-.mainComidas #btnradio5:checked ~ .row > .Tortas {
-  display: none;
-}
 
 
 
-.mainComidas .btn {
-  padding-left: 2%;
-  padding-right: 2%;
-  color: black;
-  
-  background-color: rgb(219, 180, 136);
-  width: 20%;
-  
-}
 
 
 
-.mainComidas .btn:hover {
-  padding-left: 2%;
-  padding-right: 2%;
-  color: black;
-  background-color:rgb(163, 125, 81);
-  width: 20%;
-  font-size: larger;
 
-  
-}
+
+
 
 
 

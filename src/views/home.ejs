@@ -1,149 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <%- include('./partials/head') %>
+  <%- include('./partials/head') %>
 </head>
 
 
 <header>
-
-    <img class="logo ubicar" src="/images/logo_helartico.png">
-    <nav>
-      <ul>
-        <li>
-          <h4> 
-          <a href="/">Inicio</a>
-         </h4>
-        </li>
-        <li>
-          <h4>
-          <a href="/productos">Productos</a>
-          </h4>
-        </li>
-        <li>
-          <h4>
-          <a href="/sabores">Sabores</a>
-          </h4>
-        </li>
-        <li>
-          <h4>
-          <a href="">Locales</a>
-          </h4>
-        </li>
-        <li>
-          <h4>
-          <a href="">Contacto</a>
-          </h4>
-        </li>
-        <li>
-          <h4>
-          </h4>
-        </li>
-      </ul>
-    </nav>
-          <a> 
-            <img class="carrito size" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" src="/images/shopping-cart.png">
-          </a>
-<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-  <div class="offcanvas-header">
-    <h3 class="texto_h3" id="offcanvasRightLabel">Tu pedido</h3>
-    <button type="button_home" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-  </div>
-  <div class="offcanvas-body">
-    <img class="carrito2" src="/images/alfajor.png" alt="foto-compra"> 
-    <div class="descripcion">
-    <h3 class="producto texto_h3">Producto</h3>
-    <h4>$000</h4>
-    <label for="cantidad">Cantidad:</label>
-        <select name="cantidad" id="cantidad">
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
-        </select>
-      </div>
-      <br>
-      <hr>
-      <h3>Total:    $ </h3>
-      <button class="btn ver-pedido" type= "button" >Ver pedido</button><br>
-      <a href="/pedidos"><button class="btn terminar-pedido" type="button" >Terminar pedido</button></a>
+<%- include('./partials/header') %>
+</header>
 
 
 
-
-  </div>
-</div>
-          
-    <div class="overlay">
-  <h1 class="titulo_home">HELÁRTICO</h1>
-  <h3 class="texto_h3">1000 razones para elegirnos</h3>
+<main class="main_home">
   
-  
-    <br>
-    <button class="button_carrusel"><h5 class="texto_home_f">SOBRE NOSOTROS</h5></button>
-      </div>
+  </div>
+
+  <div class="overlay">
+    <h1 class="titulo_home">HELÁRTICO</h1>
+    <h3 class="texto_h3">1000 razones para elegirnos</h3>
 
 
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-   <div>
-
-    <a class="size login" href="/usuario"><i class="fa-solid fa-user"></i>
-    </a>   
     
-  
+    <button class="button_carrusel">
+      <h5 class="texto_home_f">SOBRE NOSOTROS</h5>
+    </button>
    </div>
 
- </header>
-  <main>
 
-<div class="container">
-  
-  <div id="myCarousel" class="carousel slide" data-ride="carousel">
-    <!-- Indicators -->
-    <ol class="carousel-indicators">
-      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-      <li data-target="#myCarousel" data-slide-to="1"></li>
-      <li data-target="#myCarousel" data-slide-to="2"></li>
-    </ol>
 
-    <!-- Wrapper for slides -->
-    <div class="carousel-inner">
-      <div class="item active">
-        <img width="5000px" src="/images/ejemplo.jpg">
+ 
+
+
+
+
+  <div>
+
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner">
+        <div class="item active">
+          <img width="5000px" src="/images/ejemplo.jpg">
+        </div>
+
+        <div class="item">
+          <img width="2000px" src="/images/ejemplo.jpg">
+        </div>
+
+        <div class="item">
+          <img width="5000px" src="/images/ejemplo.jpg">
+        </div>
       </div>
 
-      <div class="item">
-        <img width="2000px" src="/images/ejemplo.jpg">
-      </div>
-    
-      <div class="item">
-        <img width="5000px" src="/images/ejemplo.jpg">
-      </div>
+      <!-- Left and right controls -->
+
     </div>
-
-    <!-- Left and right controls -->
-    
   </div>
-</div>
-  </main>
+</main>
 
 <section class="section_home">
-    <img class="postre_home_1 " src="/images/PostreHleado1.png" alt="">
-      <img class="postre_home_1 " src="./images/helado home 2.jpg" alt="">
-      <img class="postre_home_2 " src="./images/postre helado 3.jpg" alt="">
-      <img class="postre_home_2 " src="./images/alfajor helado.jpg" alt="">
+  <img class="postre_home_1 " src="/images/PostreHleado1.png" alt="">
+  <img class="postre_home_1 " src="./images/helado home 2.jpg" alt="">
+  <img class="postre_home_2 " src="./images/postre helado 3.jpg" alt="">
+  <img class="postre_home_2 " src="./images/alfajor helado.jpg" alt="">
 
-      <h4 class="texto_home_1 texto_home_fh">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni doloremque corrupti distinctio iusto cum vitae, architecto sit assumenda vero quae ipsa illum eius maiores? Maiores animi iure et soluta laboriosam?</h4>
-      <h4 class="texto_home_2 texto_home_fh">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni doloremque corrupti distinctio iusto cum vitae, architecto sit assumenda vero quae ipsa illum eius maiores? Maiores animi iure et soluta laboriosam?</h4>
-      <h4 class="texto_home_3 texto_home_fh">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni doloremque corrupti distinctio iusto cum vitae, architecto sit assumenda vero quae ipsa illum eius maiores? Maiores animi iure et soluta laboriosam?</h4>
-      <h4 class="texto_home_4 texto_home_fh">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni doloremque corrupti distinctio iusto cum vitae, architecto sit assumenda vero quae ipsa illum eius maiores? Maiores animi iure et soluta laboriosam?</h4>
-  </section>
+  <h4 class="texto_home_1 texto_home_fh">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni doloremque
+    corrupti distinctio iusto cum vitae, architecto sit assumenda vero quae ipsa illum eius maiores? Maiores animi iure
+    et soluta laboriosam?</h4>
+  <h4 class="texto_home_2 texto_home_fh">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni doloremque
+    corrupti distinctio iusto cum vitae, architecto sit assumenda vero quae ipsa illum eius maiores? Maiores animi iure
+    et soluta laboriosam?</h4>
+  <h4 class="texto_home_3 texto_home_fh">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni doloremque
+    corrupti distinctio iusto cum vitae, architecto sit assumenda vero quae ipsa illum eius maiores? Maiores animi iure
+    et soluta laboriosam?</h4>
+  <h4 class="texto_home_4 texto_home_fh">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni doloremque
+    corrupti distinctio iusto cum vitae, architecto sit assumenda vero quae ipsa illum eius maiores? Maiores animi iure
+    et soluta laboriosam?</h4>
+</section>
 
-  
+
 <footer>
-<div class="footer_home"><%- include('./partials/footer') %></div>
+  <div class="footer_home"><%- include('./partials/footer') %></div>
 </footer>
 
 
-  
+
 </html>
