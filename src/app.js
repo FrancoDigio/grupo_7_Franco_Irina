@@ -4,6 +4,7 @@ const express = require('express');
 const logger = require('morgan');
 const path = require('path');
 const methodOverride =  require('method-override'); 
+const multer = require('multer');
 
 // ************ express() - (don't touch) ************
 const app = express();
@@ -20,7 +21,16 @@ app.use(methodOverride('_method')); // Pasar poder pisar el method="POST" en el 
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, '/views')); // Define la ubicación de la carpeta de las Vistas
 
+const storage = multer.diskStorage({ 
+  destination: function (req, file, cb) { 
+     cb(null, './public/images/avatars'); 
+  }, 
+  filename: function (req, file, cb) { 
+     cb(null, `${Date.now()}_img_${path.extname(file.originalname)}`);  } 
+})
 
+const uploadFile = multer({ storage });
+router.post('/register', uploadFile.single('avatar'), usersController.create);
 
 // ************ WRITE YOUR CODE FROM HERE ************
 // ************ Route System require and use() ************
