@@ -7,9 +7,9 @@
     
     <!-- Cuerpo principal -->
     <section class="row-form">
-      <article class="col-12  card">
+      <article class="col-11  card">
         <div class="card-body">
-          <h2 class="display-4 text-white bg-dark text-center pt-2">Actualizar un Producto</h2>
+          <h2 class="display-4 text-black text-center ">Actualizar producto</h2>
         </div>
       </article>
     </section>
@@ -17,7 +17,7 @@
     <section class="bg-home pt-4">
       <div class="container">
         <div class="row-form">
-          <div class="col-8 mx-auto bg-light ">
+          <div class="col-8 mx-auto  ">
             <div class="create-form">
               <form action="/productos/edit/<%= productoEditar.id%>?_method=PUT" method="POST">
                 <div class="form-group p-1">
@@ -30,7 +30,7 @@
                 
                 <div class="">
                   <figure class="form-group p-1">
-                    <img class="w-100" src="/images/<%= productoEditar.imagen%>" alt="">
+                    <img class="w-80" src="/images/<%= productoEditar.imagen%>" alt="">
                   </figure>
                   <input type="hidden" name="imagen" value="<%= productoEditar.imagen%>">
                   <!--De esta forma logro conservar y que viaje la imagen anterior de esta forma evito que el usuario seleccione una imagen nuevamente, ( si no lo desea) -->

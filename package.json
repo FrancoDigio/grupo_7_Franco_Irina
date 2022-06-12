@@ -1,56 +1,65 @@
 {
-  
+  
   "name": "grupo_7_franco_irina",
-  
+  
   "version": "1.0.0",
-  
+  
   "description": "proyecto digital",
-  
+  
   "main": "app.js",
-  
+  
   "scripts": {
-  
-    
+  
+    
   "start": "nodemon ./src/bin/www"
-  
+  
   },
-  
+  
   "repository": {
-  
-    
+  
+    
   "type": "git",
-  
-    
+  
+    
   "url": "git+https://github.com/FrancoDigio/grupo_7_Franco_Irina.git"
-  
+  
   },
-  
+  
   "author": "Irina y Franco",
-  
+  
   "license": "ISC",
-  
+  
   "bugs": {
-  
-    
+  
+    
   "url": "https://github.com/FrancoDigio/grupo_7_Franco_Irina/issues"
-  
+  
   },
-  
+  
   "homepage": "https://github.com/FrancoDigio/grupo_7_Franco_Irina#readme",
-  
+  
   "dependencies": {
-  
-    
+  
+    
   "ejs": "^3.1.8",
-  
-    
+  
+    
   "express": "^4.18.1",
-  
-    
+  
+    
+  "logger": "^0.0.1",
+  
+    
+  "method-override": "^3.0.0",
+  
+    
+  "morgan": "^1.10.0",
+  
+    
   "multer": "^1.4.5-lts.1",
-  
-    
+  
+    
   "nodemon": "^2.0.16"
-  
+  
   }
 }

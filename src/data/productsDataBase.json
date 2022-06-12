@@ -1,29 +1,49 @@
 [
-  {
+  {  "id": 1,
     "nombre": "1 KG HELADO ",
+    "descripcion": "",
     "precio": "2001",
     "imagen": "kilo.png",
-    "id": "1"
+    "categoria": "helado"
   },
   {
-    "nombre": "1/4 KG HELADO",
-    "precio": "510",
-    "id": "3"
+    "id": 2,
+    "nombre": "1/2 kg HELADO",
+    "descripcion": "",
+    "precio": 900,
+    "imagen": "medio-kilo.png",
+    "categoria": "helado"
   },
   {
-    "id": 4,
-    "nombre": "",
-    "description": "",
-    "precio": 500,
+    "id": 3,
+    "nombre": "1/4 kg HELADO",
+    "descripcion": "",
+    "precio": 530,
+    "imagen": "cuarto.jpg",
+    "category": "helado"
+  },
+  { "id": 4,
+    "nombre": "franui",
+    "descripcion": "",
+    "precio": 370,
+    "imagen": "franui1.jpg",
+    "category": "postre helado"
+
+  },
+  { "id": 5,
+    "nombre": "almendrado",
+    "descripcion": "",
+    "precio": 370,
     "imagen": "almendrado.png",
-    "category": "tortas heladas"
+    "category": "torta helada"
+
   },
-  {
-    "id": 5,
-    "nombre": "alfajor",
-    "description": "",
-    "precio": 5300,
-    "imagen": "alfajor.png",
-    "category": ""
+  { "id": 6,
+    "nombre": "paleta",
+    "descripcion": "",
+    "precio": 370,
+    "imagen": "paleta1.jpg",
+    "category": "paleta"
+
   }
 ]

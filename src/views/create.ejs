@@ -1,32 +1,56 @@
+
+
+
+<!doctype html>
+<html lang="es">
 <%- include('./partials/head') %>
 
-  <link rel="stylesheet" href="/css/estilo.css">
-  </head>
-  
-  <body>
-    <%- include('./partials/header') %>
-    <h2>Nuevo Producto</h2>
+<body>
+  <main class="">
     
-    <form action="/productos/create" method="POST">
-        <div>
-            <label for="nombre">Nombre</label>
-            <input type="text" name="nombre" id="name">
+    <!-- Cuerpo principal -->
+    <section class="row-form">
+      <article class="col-11  card">
+        <div class="card-body">
+          <h2 class="display-4 text-black text-center ">Crear nuevo producto</h2>
         </div>
-        <div>
-          <label for="imagen">Imagen</label>
-          <input accept="image/*" type="file" multiple>>
+      </article>
+    </section>
+
+    <section class="bg-home pt-4">
+      <div class="container">
+        <div class="row-form">
+          <div class="col-8 mx-auto  ">
+            <div class="create-form">
+              <form action="/productos/create" method="POST">
+                <div  class="form-group p-1">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="nombre" id="name">
+                </div>
+                <div  class="form-group p-1">
+                  <label for="imagen">Imagen</label>
+                  <input accept="image/*" type="file" multiple>>
+                </div>
+        
+                <div  class="form-group p-1">
+                    <label for="precio">Precio</label>
+                    <input type="text" name="precio" id="price">
+                </div>
+        
+            
+                <div class="form-group p-1">
+                  <button type="submit" class="btn btn btn-info">Crear</button>
+                  
+                </div>
+
+              </form>
+              
+            </div>
+          </div>
         </div>
+      </div>
+    </section>
+  </main>
+</body>
 
-        <div>
-            <label for="precio">Precio</label>
-            <input type="text" name="precio" id="price">
-        </div>
-
-        <div>
-            <button type="submit">Guardar</button>
-        </div>
-
-    </form>
-
-  </body>
 </html>
