@@ -36,10 +36,36 @@
     "precio": "800",
     "imagen": "defaultImg.jpg"
   },
-  {
-    "id": 8,
-    "nombre": "Cafe",
-    "precio": "300",
-    "imagen": "defaultImg.jpg"
+  { "id": 6,
+    "nombre": "paleta",
+    "descripcion": "",
+    "precio": 370,
+    "imagen": "paleta1.jpg",
+    "category": "paleta"
+
+  },
+  { "id": 7,
+    "nombre": "paleta",
+    "descripcion": "",
+    "precio": 370,
+    "imagen": "paleta2.jpg",
+    "category": "paleta"
+
+  },
+  { "id": 8,
+    "nombre": "Torta Oreo",
+    "descripcion": "",
+    "precio": 1370,
+    "imagen": "torta-oreo.png",
+    "category": "tortas heladas"
+
+  },
+  { "id": 9,
+    "nombre": "Postre helado sabor chocotorta",
+    "descripcion": "",
+    "precio": 370,
+    "imagen": "foto5.png",
+    "category": "paleta"
+
   }
 ]
