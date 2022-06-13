@@ -30,13 +30,11 @@
     "category": "postre helado"
 
   },
-  { "id": 5,
-    "nombre": "almendrado",
-    "descripcion": "",
-    "precio": 370,
-    "imagen": "almendrado.png",
-    "category": "torta helada"
-
+  {
+    "id": 7,
+    "nombre": "helado",
+    "precio": "800",
+    "imagen": "defaultImg.jpg"
   },
   { "id": 6,
     "nombre": "paleta",
