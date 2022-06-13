@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="es">
+<%- include('./partials/head') %>
+
+<body class="body-ventana">
+  <main class="">
+    <div class="window-notice" id="window-notice">
+        <div class="content">
+            <div class="content-text">¿Eliminar el producto?
+                <form action="/productos/delete/<%= productoBorrar.id %>?_method=DELETE
+                    " method="POST">
+                    <input type="hidden" name="id" value="<%= productoBorrar.id %>">
+                    <button type="submit" class="btn btn-warning m-1">Eliminar</button>
+                  </form>
+                  <a href="/productos" class="btn btn-danger m-1">Volver</a>
+            </div>
+        </div>
+    </div>
+    
+    
+</main>
+</body>
+
+</html>

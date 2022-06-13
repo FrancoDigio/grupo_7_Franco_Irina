@@ -1,51 +1,34 @@
 [
-  {
-    "id": 1,
+  {  "id": 1,
     "nombre": "1 KG HELADO ",
-    "precio": 1690,
-    "categoria": "helado",
-    "descripcion": "Máximo 4 gustos",
-    "imagen": "kilo.png"
+    "descripcion": "",
+    "precio": "2001",
+    "imagen": "kilo.png",
+    "categoria": "helado"
   },
   {
     "id": 2,
-    "nombre": "1/2 KG HELADO ",
+    "nombre": "1/2 kg HELADO",
+    "descripcion": "",
     "precio": 900,
-    "categoria": "in-sale",
-    "descripcion": "Máximo 3 gustos",
-    "imagen": "medio-kilo.png"
+    "imagen": "medio-kilo.png",
+    "categoria": "helado"
   },
   {
     "id": 3,
-    "nombre": "1/4 KG HELADO",
-    "precio": 500,
-    "categoria": "in-sale",
-    "descripcion": "Máximo 2 gustos",
-    "imagen": "cuarto.jpg"
+    "nombre": "1/4 kg HELADO",
+    "descripcion": "",
+    "precio": 530,
+    "imagen": "cuarto.jpg",
+    "category": "helado"
   },
-  {
-    "id": 4,
-    "nombre": "",
-    "description": "",
-    "precio": 500,
-    "imagen": "almendrado.png",
-    "category": "tortas heladas"
-  },
-  {
-    "id": 5,
-    "nombre": "alfajor",
-    "description": "",
-    "precio": 5300,
-    "imagen": "alfajor.png",
-    "category": ""
-  },
-  {
-    "id": 6,
+  { "id": 4,
     "nombre": "franui",
-    "description": "",
-    "price": 20999,
+    "descripcion": "",
+    "precio": 370,
     "imagen": "franui1.jpg",
-    "category": ""
+    "category": "postre helado"
+
   },
   {
     "id": 7,

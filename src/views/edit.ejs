@@ -6,37 +6,37 @@
   <main class="">
     
     <!-- Cuerpo principal -->
-    <section class="row">
-      <article class="col-12  card">
+    <section class="row-form">
+      <article class="col-11  card">
         <div class="card-body">
-          <h2 class="display-4 text-white bg-dark text-center pt-2">Actualizar un Producto</h2>
+          <h2 class="display-4 text-black text-center ">Actualizar producto</h2>
         </div>
       </article>
     </section>
 
     <section class="bg-home pt-4">
       <div class="container">
-        <div class="row">
-          <div class="col-8 mx-auto bg-light ">
+        <div class="row-form">
+          <div class="col-8 mx-auto  ">
             <div class="create-form">
-              <form action="/productos/edit/<%= productoEditar.id%>?_method=PUT
-                            " method="POST">
+              <form action="/productos/edit/<%= productoEditar.id%>?_method=PUT" method="POST">
                 <div class="form-group p-1">
-                  <input type="text" class="form-control" name="nombre" placeholder="Nombre" required="required" value="<%= productoEditar.nombre%>">
+                  <input type="text" class="" name="nombre" placeholder="nombre"  value="<%= productoEditar.nombre%>">
                 </div>
                
                 <div class="form-group p-1">
-                  <input type="number" class="form-control" name="precio" placeholder="Indique el precio" required="required" value="<%= productoEditar.precio%>">
+                  <input type="number" class="" name="precio" placeholder="Indique el precio"  value="<%= productoEditar.precio%>">
                 </div>
                 
-                <!--Aquí solicito la imagen-->
-                <div class="custom-file">
+                <div class="">
                   <figure class="form-group p-1">
-                    <img class="w-100" src="/images/<%= productoEditar.imagen%>" alt="">
+                    <img class="w-80" src="/images/<%= productoEditar.imagen%>" alt="">
                   </figure>
-                  <input type="hidden" name="oldImagen" value="<%= productoEditar.imagen%>">
+                  <input type="hidden" name="imagen" value="<%= productoEditar.imagen%>">
                   <!--De esta forma logro conservar y que viaje la imagen anterior de esta forma evito que el usuario seleccione una imagen nuevamente, ( si no lo desea) -->
-                  <input type="file" name="imagen" disabled>
+                  <input type="file" name="imagen" >
+
+                </div>
 
                 </div>
                 <div class="form-group p-1">
@@ -45,6 +45,7 @@
                 </div>
 
               </form>
+              
             </div>
           </div>
         </div>

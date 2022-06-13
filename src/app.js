@@ -1,9 +1,9 @@
-const createError = require('http-errors');
-const cookieParser = require('cookie-parser');
+const morgan = require("morgan")
 const express = require('express');
 const logger = require('morgan');
 const path = require('path');
 const methodOverride =  require('method-override'); 
+const multer = require('multer');
 
 // ************ express() - (don't touch) ************
 const app = express();
@@ -13,13 +13,12 @@ app.use(express.static(path.join(__dirname, '../public')));  // Necesario para l
 app.use(express.urlencoded({ extended: false }));
 app.use(logger('dev'));
 app.use(express.json());
-app.use(cookieParser());
+
 app.use(methodOverride('_method')); // Pasar poder pisar el method="POST" en el formulario por PUT y DELETE
 
 // ************ Template Engine - (don't touch) ************
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, '/views')); // Define la ubicación de la carpeta de las Vistas
-
 
 
 // ************ WRITE YOUR CODE FROM HERE ************
