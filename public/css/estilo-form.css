@@ -6,6 +6,10 @@ h5 {
 
 }
 
+.iri{
+  color: red;
+}
+
 header {
   position: fixed;
   top: 0px;
@@ -38,7 +42,6 @@ header {
   header nav ul a {
     display: block;
     padding: 15px 20px;
-    color: rgb(10, 10, 10);
     text-decoration: none;
     font-family: 'Dancing Script';
   }
