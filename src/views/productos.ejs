@@ -25,7 +25,7 @@
         <% products.forEach( prod => { %>
          <div class="col-lg-4 col-md-6 col-md-12 Helados">
           <img src= "images/<%= prod.imagen %>">
-            <div class="img iri container-flex-box">
+            <div class="img container-flex-box">
               <h5 class="flex-grow-30">
                   <%= prod.nombre %> 
               </h5>
@@ -35,8 +35,14 @@
               
               <a href="/productos/delete/<%= prod.id %> " class="btn btn-info m-1">Borrar</a> 
               
-              <a href="/productos/edit/<%= prod.id %>"><button class=" btn">Editar</button></a>
-              <a href=""><img class="" src="/images/shopping-cart.png"></a>
+              <a href="/productos/edit/<%= prod.id %>">
+                <button class="btn btn-info m-1">Editar</button>
+              </a>
+
+              <a href=""><button class="btn btn-info m-1">Comprar</button></a>
+
+             
+
             </div>
           </div>
           <% } ) %>
