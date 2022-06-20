@@ -10,7 +10,9 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
  
   <link rel="stylesheet" href="/css/estilo-form.css">
+  
   <script src="https://kit.fontawesome.com/278943c891.js" crossorigin="anonymous"></script>
+  
 </head>
  
   <title>Login</title>
@@ -22,21 +24,48 @@
             <a href="/"><button type="button" class="btn-close" aria-label="Close"><i class="fa-solid fa-angles-left"></i></button></a>
             <div class="content-text">
                 <div class="container">
+                  
                     <div class="login-container">
                       <div class="register">
                         <h2>Registrarse</h2>
-                        <form action="">
-                          <input type="text" placeholder="Nombre de usuario" class="nombre" required>
-                          <input type="text" placeholder="Correo" class="correo" required>
-                          <input type="password" placeholder="Contraseña" class="pass" required>
-                          <input type="password" placeholder="Confirma contraseña" class="repass" required>
+                        <form action="/usuario" method="POST" enctype="multipart/form-data">
+                          
+                          <input type="text" placeholder="Nombre de usuario" class="nombre" name="name">
+                          <% if (locals.errors && errors.name) { %>
+                          <div class="iri text-primary">
+                            <h6><%= errors.name.msg %> </h6>
+    
+                          </div>
+                          <% } %>
+                        
+                          <input type="text" placeholder="Correo" class="correo" name="email">
+                          <% if (locals.errors && errors.email) { %>
+                            <div class="iri text-primary">
+                              <h6><%= errors.email.msg %> </h6>
+      
+                            </div>
+                            <% } %>
+                          <input type="password" placeholder="Contraseña" class="pass" name="password">
+                          <% if (locals.errors && errors.password) { %>
+                            <div class="iri text-primary">
+                              <h6><%= errors.password.msg %> </h6>
+      
+                            </div>
+                            <% } %>
+                          <input type="password" placeholder="Confirma contraseña" class="repass" name="confirm">
+                          <% if (locals.errors && errors.confirm) { %>
+                            <div class="iri text-primary">
+                              <h6><%= errors.confirm.msg %> </h6>
+      
+                            </div>
+                            <% } %>
                           <input type="submit" class="submit" value="REGISTRARSE">
                           <input type="reset" class="submit" value="REINICIAR">
                         </form>
                       </div>
                       <div class="login">
                         <h2>Ingresar</h2>
-                        <form action="">
+                        <form action="/usuario" method="POST" enctype="multipart/form-data">
                            <input type="text" placeholder="Nombre de usuario" class="nombre" required>
                            <input type="password" placeholder="Contraseña" class="pass" required>
                            <a href=""><h5>Olvidé mi contraseña</h5></a><br>
