@@ -338,6 +338,35 @@ header nav ul a {
 
 
 
+/*------------------------MAIN-PEDIDOS------------------------------*/
+/*------------------------MAIN-PEDIDOS------------------------------*/
+/*------------------------MAIN-PEDIDOS------------------------------*/
+
+
+
+.fran{
+
+  position: relative;
+  right: 350px;
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -427,9 +456,7 @@ header nav ul a {
 /*---------------------------SABORES---------------------------------*/
 
 
-.accordion{
 
-}
 .accordion-button{
   background-color: rgb(216, 162, 123);
 }
@@ -514,6 +541,13 @@ footer ul li {
   position: relative;
   bottom: -500px;
   background: rgb(207, 181, 164);
+}
+
+.footer_pedidos{
+ margin-top: -10px;
+  background: rgb(207, 181, 164);
+  margin: 0%;
+  width: 100%;
 }
 
 
