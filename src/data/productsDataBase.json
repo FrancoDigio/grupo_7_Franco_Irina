@@ -1,5 +1,6 @@
 [
-  {  "id": 1,
+  {
+    "id": 1,
     "nombre": "1 KG HELADO ",
     "descripcion": "",
     "precio": "2001",
@@ -22,50 +23,54 @@
     "imagen": "cuarto.jpg",
     "category": "helado"
   },
-  { "id": 4,
+  {
+    "id": 4,
     "nombre": "franui",
     "descripcion": "",
     "precio": 370,
     "imagen": "franui1.jpg",
     "category": "postre helado"
-
   },
   {
-    "id": 7,
     "nombre": "helado",
     "precio": "800",
-    "imagen": "defaultImg.jpg"
+    "imagen": [
+      "defaultImg.jpg,",
+      ""
+    ],
+    "id": "7"
   },
-  { "id": 6,
+  {
+    "id": 6,
     "nombre": "paleta",
     "descripcion": "",
     "precio": 370,
     "imagen": "paleta1.jpg",
     "category": "paleta"
-
   },
-  { "id": 7,
-    "nombre": "paleta",
-    "descripcion": "",
-    "precio": 370,
-    "imagen": "paleta2.jpg",
-    "category": "paleta"
-
+  {
+    "nombre": "helado",
+    "precio": "800",
+    "imagen": [
+      "defaultImg.jpg,",
+      ""
+    ],
+    "id": "7"
   },
-  { "id": 8,
+  {
+    "id": 8,
     "nombre": "Torta Oreo",
     "descripcion": "",
     "precio": 1370,
     "imagen": "torta-oreo.png",
     "category": "tortas heladas"
-
   },
-  { "id": 9,
+  {
+    "id": 9,
     "nombre": "Postre helado sabor chocotorta",
     "descripcion": "",
     "precio": 370,
     "imagen": "foto5.png",
     "category": "paleta"
-
   }
 ]
