@@ -49,6 +49,7 @@
     "category": "paleta"
   },
   {
+<<<<<<< HEAD
     "nombre": "helado",
     "precio": "800",
     "imagen": [
@@ -56,6 +57,14 @@
       ""
     ],
     "id": "7"
+=======
+    "id": 7,
+    "nombre": "paleta",
+    "descripcion": "",
+    "precio": 370,
+    "imagen": "paleta2.jpg",
+    "category": "paleta"
+>>>>>>> 41efc6f3230deb8c81cb32208751d6c71bcd2e66
   },
   {
     "id": 8,
