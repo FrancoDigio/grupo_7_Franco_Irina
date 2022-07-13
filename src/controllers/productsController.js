@@ -14,7 +14,7 @@ const toThousand = n => n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
 const controller = {
 	home: (req, res) => {
 		const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
-		res.render("productos", {products:products})
+		res.render("products", {products:products})
 
 	},
 

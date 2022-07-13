@@ -41,7 +41,7 @@ const pedidosRouter = require('./routes/pedidos');
 
 
 app.use('/', mainRouter);
-app.use('/productos', productsRouter);
+app.use('/products', productsRouter);
 app.use('/administrador', adminRouter);
 app.use('/usuario', usuarioRouter);
 app.use('/sabores', saboresRouter);
