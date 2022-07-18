@@ -32,10 +32,13 @@
     "category": "postre helado"
   },
   {
-    "id": 7,
     "nombre": "helado",
     "precio": "800",
-    "imagen": "defaultImg.jpg"
+    "imagen": [
+      "defaultImg.jpg,",
+      ""
+    ],
+    "id": "7"
   },
   {
     "id": 6,
@@ -46,12 +49,22 @@
     "category": "paleta"
   },
   {
+<<<<<<< HEAD
+    "nombre": "helado",
+    "precio": "800",
+    "imagen": [
+      "defaultImg.jpg,",
+      ""
+    ],
+    "id": "7"
+=======
     "id": 7,
     "nombre": "paleta",
     "descripcion": "",
     "precio": 370,
     "imagen": "paleta2.jpg",
     "category": "paleta"
+>>>>>>> 41efc6f3230deb8c81cb32208751d6c71bcd2e66
   },
   {
     "id": 8,
