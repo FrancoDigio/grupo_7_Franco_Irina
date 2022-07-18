@@ -7,16 +7,16 @@ const {body} = require("express-validator");
 // ************ Controller Require ************
 const usuarioController = require('../controllers/usuarioController');
 
-const validator = [
-    body('name').notEmpty().withMessage('Debes completar el nombre'),
+const validacionesLogin = [
+    
     body('email').notEmpty().withMessage('Debes completar el email'),
     body('password').notEmpty().withMessage('Debes completar la contraseña'),
-    body('confirm').notEmpty().withMessage('Debes confirmar la constraseña'),
+    
 
 ]
 
-router.get('/', usuarioController.index); 
+router.get('/login', usuarioController.index); 
 
-router.post('/',validator, usuarioController.processForm); 
+router.post('/login',validacionesLogin, usuarioController.ingresar); 
 
 module.exports = router;

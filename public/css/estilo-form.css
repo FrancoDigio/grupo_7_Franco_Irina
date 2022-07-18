@@ -1,93 +1,33 @@
-h5 {
-  color: black;
-  text-decoration:none;
-  font-style: normal;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   
-
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
 }
+
+
 
 .iri{
   color: red;
 }
 
-header {
-  position: fixed;
-  top: 0px;
-  width: 100%;
-  
-  
-  }
-  
-  header nav ul {
-      
-    background-color:rgb(207, 181, 164);
-    margin: 0;
-    list-style: none;
-    padding: 0;
-    /*REVISAR---------------------------------*/
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    justify-content: center;
-    
-  }
-  
-  
-  header nav ul li :hover {
-    background-color:rgb(182, 104, 89);
-    color: black;
-    font-size:larger;
-  }
-  
-  header nav ul a {
-    display: block;
-    padding: 15px 20px;
-    text-decoration: none;
-    font-family: 'Dancing Script';
-  }
-  
-  .logo {
-    width: 98px;
-    height: 98px;
-}
 
-.ubicar {
-    position: absolute;
-    left: 5px;
-    top: -15px;
-}
-.size {
-  width: 20px;
-  height: 20px;
-}
-
-
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Dancing Script';
-  }
-   
-  
    
   .container{
-    width: 100%;
-    height: 90vh;
-    padding: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    
+    width: 70vw;
+    margin-right: 0vw;
+    
 
   
   }
    
   .login-container{
     display: flex;
-    width: 650px;
+    
     height: auto;
-    background: rgb(207, 181, 164);
+    background: rgb(233, 243, 249);
   }
    
   .register, .login{
@@ -99,7 +39,7 @@ header {
     position: relative;
     border-style: solid;
     border-width: 1px 0px 1px 1px;
-    height:500px;
+    
   }
    
   .register h2{
@@ -127,7 +67,7 @@ header {
   .register .submit{
     width: auto;
     padding: 10px;
-    background-color: rgb(190, 141, 108);
+    background-color: blue;
     color: #fff;
     font-size: 12px;
     box-shadow: 0 0 3px 0 rgba(0, 0, 0, .2);
@@ -137,7 +77,7 @@ header {
   .login .submit{
     width: auto;
     padding: 10px;
-    background-color: rgb(190, 141, 108);
+    background-color: blue;
     color: #fff;
     font-size: 12px;
     box-shadow: 0 0 3px 0 rgba(0, 0, 0, .2);
@@ -163,7 +103,7 @@ header {
   }
    
   .login{
-    background-color:  white;
+    background-color:  rgb(253, 248, 248);
     border-style: solid;
     padding: 10%;
     border-width: 1px;
@@ -243,37 +183,15 @@ header {
 /*-------------ventanaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa-----------------------*/
 
 
-.fondo {
-  width: 100%;
-  height: 100%;
-  
-}
 
 
   .window-notice {
-    left: 0;
+    left: 30;
     bottom: 0;
     right: 0;
-    top: 0;
+    top: 20;
     display: flex;
     position: fixed;
     z-index: 999;
 }
 
-.window-notice .content {
-  background: transparent;
-  border-radius: 2px;
-  
-  box-sizing: content-box;
-  display: flex;
-  flex-direction: column;
-  margin-left: 2%;
-  max-width: 550px;
-  min-width: 320px !important;
-  overflow: hidden;
-  position: relative;
-  width:100%;
-  height: 100%;
-  padding: 2rem;
-  font-size: 1.3rem;
-}

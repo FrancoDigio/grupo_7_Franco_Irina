@@ -49,15 +49,17 @@
         <section id="product1" class="section-p1">
             <h2>Tienda</h2>
             <div class="pro-container">
+                <% products.forEach( prod => { %>
                 <div class="pro">
-                    <img src="/images/kilo.png" alt="" >
+                    <img src="images/<%= prod.imagen %>" alt="" >
                     <div class="des">
-                        <h5> 1 kg de Helado </h5>
+                        <h5> <%= prod.nombre %> </h5>
                         <span>4 gustos máximo</span>
-                        <h4> $1245 </h4>
+                        <h4> <%= prod.precio %> </h4>
                     </div>
                     <a href="#"> <i class="fa-solid fa-cart-arrow-down cart" ></i>  </a>
                 </div>
+                <% } ) %>
 
         </section>
         

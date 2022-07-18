@@ -21,16 +21,29 @@ const controller = {
 	})},
 
 	index: (req, res) => {
-		res.render('usuario')
+		res.render('usuario2')
 	},
-	processForm: (req,res) => {
-		const validation = validationResult(req);
-		if (validation.errors.length > 0 ) {
-			return res.render("usuario",{
-				errors: validation.mapped()
-			} )
+
+	ingresar: (req,res) =>{
+		const errors = validationResult(req);
+		
+		if(errors.isEmpty()){
+		  let archivoUsuarios =  JSON.parse(fs.readFileSync(path.resolve(__dirname, '../data/UsersDataBase.json')));
+		  let usuarioLogueado = archivoUsuarios.find(usuario => usuario.email == req.body.email)
+		  
+		  delete usuarioLogueado.password;
+		  req.session.usuario = usuarioLogueado;  
+		  if(req.body.recordarme){
+			res.cookie('email',usuarioLogueado.email,{maxAge: 1000 * 60 * 60 * 24})
+		  }
+		  return res.redirect('./');  
+  
+		}else{
+		 
+		  res.render(path.resolve(__dirname, '../views/usuario2'),{errors:errors.mapped(),old:req.body});        
 		}
-	}
+	  },
+	
 	
 };
 
