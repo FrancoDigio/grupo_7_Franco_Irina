@@ -4,25 +4,43 @@ const logger = require('morgan');
 const path = require('path');
 const methodOverride =  require('method-override'); 
 const multer = require('multer');
+const passport = require('passport');
 const session = require('express-session');
 var cookieParser = require('cookie-parser');
+const {body} = require("express-validator")
 
 // ************ express() - (don't touch) ************
 const app = express();
 
 // ************ Middlewares - (don't touch) ************
 app.use(express.static(path.join(__dirname, '../public')));  // Necesario para los archivos estáticos en el folder /public
-app.use(express.urlencoded({ extended: false }));
+app.use(express.urlencoded({ extended: true }));
 app.use(logger('dev'));
 app.use(express.json());
-app.use(cookieParser())
+app.use(cookieParser("Mi ultra hiper secreto"))
+
+
+
+const storage = multer.diskStorage({
+  destination: function (req, file, cb) {
+    cb(null, '../public/images')
+  },
+  filename: function (req, file, cb) {
+    const uniqueSuffix = Date.now() + '-' + Math.round(Math.random() * 1E9)
+    cb(null, file.filename + '-' + uniqueSuffix)
+  }
+})
+
+const upload = multer({ storage })
 
 app.use(session({
   secret: 'Helártico',
-  resave: false,
+  resave: true,
   saveUninitialized: true,
   }));
 
+app.use(passport.initialize());
+app.use(passport.session());
 app.use(methodOverride('_method')); // Pasar poder pisar el method="POST" en el formulario por PUT y DELETE
 
 // ************ Template Engine - (don't touch) ************
@@ -46,6 +64,7 @@ app.use('/administrador', adminRouter);
 app.use('/usuario', usuarioRouter);
 app.use('/sabores', saboresRouter);
 app.use('/pedidos', pedidosRouter);
+
 
 
 

@@ -39,7 +39,7 @@ const controller = {
     let nuevoProductoGuardar = JSON.stringify(productos, null, 2);
     fs.writeFileSync(productsFilePath, nuevoProductoGuardar, "utf-8");
     
-    res.redirect("/productos");
+    res.redirect("/products");
 		
        },
 	
@@ -64,7 +64,7 @@ const controller = {
 		});
 		let productoActualizar = JSON.stringify(productoUpdate, null, 2);
 		fs.writeFileSync(productsFilePath, productoActualizar, "utf-8");
-		res.redirect("/productos");
+		res.redirect("/products");
 	  },
 
 	  deleteForm: (req, res) => {
@@ -84,7 +84,7 @@ const controller = {
 		let productoBorrar = JSON.stringify(productoDelete, null, 2);
 		fs.writeFileSync(productsFilePath, productoBorrar, "utf-8");
 		
-		res.redirect("/productos");
+		res.redirect("/products");
 	  },
 };
 

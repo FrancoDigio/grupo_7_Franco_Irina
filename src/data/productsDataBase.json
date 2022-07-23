@@ -32,15 +32,6 @@
     "category": "postre helado"
   },
   {
-    "nombre": "helado",
-    "precio": "800",
-    "imagen": [
-      "defaultImg.jpg,",
-      ""
-    ],
-    "id": "7"
-  },
-  {
     "id": 6,
     "nombre": "paleta",
     "descripcion": "",
@@ -49,22 +40,12 @@
     "category": "paleta"
   },
   {
-<<<<<<< HEAD
-    "nombre": "helado",
-    "precio": "800",
-    "imagen": [
-      "defaultImg.jpg,",
-      ""
-    ],
-    "id": "7"
-=======
     "id": 7,
     "nombre": "paleta",
     "descripcion": "",
     "precio": 370,
-    "imagen": "paleta2.jpg",
+    "imagen": "paleta1.jpg",
     "category": "paleta"
->>>>>>> 41efc6f3230deb8c81cb32208751d6c71bcd2e66
   },
   {
     "id": 8,
@@ -81,5 +62,11 @@
     "precio": 370,
     "imagen": "foto5.png",
     "category": "paleta"
+  },
+  {
+    "id": 11,
+    "nombre": "Pan",
+    "precio": "1230",
+    "imagen": "defaultImg.jpg"
   }
 ]

@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
+  <%- include('./partials/head') %>
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,17 +23,15 @@
                 <li> <a href="">Nosotros </a></li>
                 <li> <a href="">Contacto </a></li>
                 <div class="btn-group">
-                    <button type="button" class="btn btn-default dropdown-toggle"
-                            data-toggle="dropdown">
-                            <i class="fa fa-user fa-fw"></i> User</a> <span class="caret"></span>
-                    </button>
+                  <button type="button" class="btn btn-default dropdown-toggle"
+                  data-toggle="dropdown">
+                  <a class="" href="/usuario/login"><i class="fa-solid fa-arrow-right-to-bracket"></i></a>
+                  
+                  </button>
                   
                     <ul class="dropdown-menu" role="menu">
-                      <li><a href="#">Acción #1</a></li>
-                      <li><a href="#">Acción #2</a></li>
-                      <li><a href="#">Acción #3</a></li>
-
-            
+                      <li><a href="#">Login</a></li>
+                      <li><a href="#">Registarse</a></li>
                     </ul>
 
                   </div>
@@ -48,16 +46,24 @@
 
         <section id="product1" class="section-p1">
             <h2>Tienda</h2>
+            <a href="/products/create" class="btn btn-danger">Crear nuevo producto</a>
             <div class="pro-container">
                 <% products.forEach( prod => { %>
                 <div class="pro">
                     <img src="images/<%= prod.imagen %>" alt="" >
                     <div class="des">
                         <h5> <%= prod.nombre %> </h5>
-                        <span>4 gustos máximo</span>
+                        <span><%= prod.description %></span>
                         <h4> <%= prod.precio %> </h4>
                     </div>
-                    <a href="#"> <i class="fa-solid fa-cart-arrow-down cart" ></i>  </a>
+                <div class="cart">
+                    <a href="#" class="btn btn-info m-1" ><i class="fa-solid fa-cart-shopping"></i>  </a>
+              <a href="/products/delete/<%= prod.id %> " class="btn btn-info m-1"><i class="fa-solid fa-trash-can"></i></a> 
+              
+              <a href="/products/edit/<%= prod.id %>">
+                <button class="btn btn-info m-1"><i class="fa-solid fa-pen-to-square"></i></button>
+              </a>
+            </div>
                 </div>
                 <% } ) %>
 

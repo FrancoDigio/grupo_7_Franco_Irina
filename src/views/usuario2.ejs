@@ -17,27 +17,30 @@
 
 <div class="login-wrap">
 	<div class="login-html">
+       
 		<input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">Log In</label>
 		<input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">Registrarse</label>
-		<form action="/" method="post" class="login-form">
+		<form action="/usuario/login" method="POST" class="login-form" enctype="multipart/form-data">
         
 			<div class="sign-in-htm">
 				<div class="group">
-					<input id="user" type="email" class="input" name="email" placeholder="Correo electrónico" value="<%= typeof old != 'undefined' ? old.email : '' %>" >
+                    
+					<input id="" type="email" class="input" name="email" placeholder="Correo electrónico" >
 					
-                    <% if(typeof(errors) != 'undefined' && errors.email){%>
-                        <span class="text-danger">
-                          <%= errors.email.msg %>
-                        </span>
-                     <%}%>
+                    <% if (locals.errors && errors.email) { %>
+                        <div class="text-danger">
+                          <h6><%= errors.email.msg %> </h6>
+  
+                        </div>
+                        <% } %>
 				</div>
 				<div class="group">
-					<label for="pass" class="label"></label>
-					<input id="pass" type="password" placeholder="Contraseña" name="password" class="input" data-type="password">
+					
+					<input id="" type="password" placeholder="Contraseña" name="password" class="input" data-type="password">
                     <% if(typeof(errors) != 'undefined' && errors.password){%>
-                        <span class="text-danger">
-                          <%= errors.password.msg %>
-                        </span>
+                        <div class="text-danger">
+                          <h6><%= errors.password.msg %></h6>
+                        </div>
                      <%}%>
 				</div>
 				<div class="group">
@@ -45,14 +48,20 @@
 					<label for="check"><span class="icon"></span> Recordarme</label>
 				</div>
 				<div class="group">
-                    <button type="submit" class="button">Ingresar</button>
+                    <button type="submit" class="button">INGRESAR</button>
+                    
+                    <input type="reset" class="submit" value="REINICIAR">
+                    
 				</div>
-				<div class="hr"></div>
+				
 				<div class="foot-lnk">
 					<a href="#forgot">Olvidé la contraseña</a>
 				</div>
+                <div class="foot-lnk">
+                <a href="/administrador">Ingresar como administrador</a>
+                </div>
 			</div>
-        </form>
+        
 			<div class="sign-up-htm">
 				<div class="group">
 					<label for="user" class="label"></label>
@@ -82,6 +91,6 @@
 					<label for="tab-1">Already Member?</a>
 				</div>
 			</div>
-		
+		</form>
 	</div>
 </div>

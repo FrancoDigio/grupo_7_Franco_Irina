@@ -26,7 +26,11 @@
             <a href="/"><button type="button" class="btn-close" aria-label="Close"><i class="fa-solid fa-angles-left"></i></button></a>
             <div class="content-text">
                 <div class="container">
-                  
+                  <% if (locals.errors) {%>
+                    <% for ( let oneError in errors) {%>
+                      <h2><%= errors[oneError].msg %></h2>
+                      <% } %>
+                      <% } %>
                     <div class="login-container">
                       <div class="register">
                         <h2>Registrarse</h2>

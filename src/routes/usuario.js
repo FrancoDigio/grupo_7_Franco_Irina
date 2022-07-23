@@ -9,8 +9,8 @@ const usuarioController = require('../controllers/usuarioController');
 
 const validacionesLogin = [
     
-    body('email').notEmpty().withMessage('Debes completar el email'),
-    body('password').notEmpty().withMessage('Debes completar la contraseña'),
+    body('email').exists().withMessage('Debes completar el email'),
+    body('password').exists().withMessage('Debes completar la contraseña'),
     
 
 ]
